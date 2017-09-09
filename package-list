@@ -1,6 +1,3 @@
-io.github.wysohn.triggerreactor.bridge
-io.github.wysohn.triggerreactor.bridge.event
-io.github.wysohn.triggerreactor.bridge.player
 io.github.wysohn.triggerreactor.bukkit.bridge
 io.github.wysohn.triggerreactor.bukkit.bridge.event
 io.github.wysohn.triggerreactor.bukkit.bridge.player
@@ -16,10 +13,13 @@ io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.faction
 io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.mcmmo
 io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.placeholder
 io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.protocollib
-io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.theguild
 io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.vault
+io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.worldguard
 io.github.wysohn.triggerreactor.bukkit.tools
 io.github.wysohn.triggerreactor.bukkit.tools.prompts
+io.github.wysohn.triggerreactor.core.bridge
+io.github.wysohn.triggerreactor.core.bridge.event
+io.github.wysohn.triggerreactor.core.bridge.player
 io.github.wysohn.triggerreactor.core.main
 io.github.wysohn.triggerreactor.core.manager
 io.github.wysohn.triggerreactor.core.manager.trigger
@@ -35,7 +35,6 @@ io.github.wysohn.triggerreactor.sponge.bridge.event
 io.github.wysohn.triggerreactor.sponge.bridge.player
 io.github.wysohn.triggerreactor.sponge.main
 io.github.wysohn.triggerreactor.sponge.manager
-io.github.wysohn.triggerreactor.sponge.util
 io.github.wysohn.triggerreactor.tools
-org.apache.commons.lang
-org.apache.commons.lang.text
+org.apache.commons.lang3
+org.apache.commons.lang3.mutable
