@@ -4,7 +4,6 @@ io.github.wysohn.triggerreactor.bukkit.bridge.player
 io.github.wysohn.triggerreactor.bukkit.main
 io.github.wysohn.triggerreactor.bukkit.manager
 io.github.wysohn.triggerreactor.bukkit.manager.event
-io.github.wysohn.triggerreactor.bukkit.manager.location
 io.github.wysohn.triggerreactor.bukkit.manager.trigger
 io.github.wysohn.triggerreactor.bukkit.manager.trigger.share
 io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api
@@ -22,6 +21,7 @@ io.github.wysohn.triggerreactor.core.bridge.event
 io.github.wysohn.triggerreactor.core.bridge.player
 io.github.wysohn.triggerreactor.core.main
 io.github.wysohn.triggerreactor.core.manager
+io.github.wysohn.triggerreactor.core.manager.location
 io.github.wysohn.triggerreactor.core.manager.trigger
 io.github.wysohn.triggerreactor.core.manager.trigger.share.api
 io.github.wysohn.triggerreactor.core.script
@@ -36,5 +36,6 @@ io.github.wysohn.triggerreactor.sponge.bridge.player
 io.github.wysohn.triggerreactor.sponge.main
 io.github.wysohn.triggerreactor.sponge.manager
 io.github.wysohn.triggerreactor.tools
+io.github.wysohn.triggerreactor.tools.mysql
 org.apache.commons.lang3
 org.apache.commons.lang3.mutable
