@@ -8,7 +8,6 @@ io.github.wysohn.triggerreactor.bukkit.manager.trigger
 io.github.wysohn.triggerreactor.bukkit.manager.trigger.share
 io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api
 io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.coreprotect
-io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.faction
 io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.mcmmo
 io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.placeholder
 io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.protocollib
