@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -196,21 +196,25 @@ implements org.bukkit.event.Listener</pre>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/InventoryEditManager.html#onQuit-org.bukkit.event.player.PlayerQuitEvent-">onQuit</a></span>(org.bukkit.event.player.PlayerQuitEvent&nbsp;event)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/InventoryEditManager.html#reload--">reload</a></span>()</code>
 <div class="block">Reload all triggers</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/InventoryEditManager.html#saveAll--">saveAll</a></span>()</code>
 <div class="block">Save all triggers</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/InventoryEditManager.html#saveEdit-io.github.wysohn.triggerreactor.core.bridge.entity.IPlayer-">saveEdit</a></span>(<a href="../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html" title="interface in io.github.wysohn.triggerreactor.core.bridge.entity">IPlayer</a>&nbsp;player)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/InventoryEditManager.html#startEdit-io.github.wysohn.triggerreactor.core.bridge.entity.IPlayer-io.github.wysohn.triggerreactor.core.manager.trigger.inventory.InventoryTrigger-">startEdit</a></span>(<a href="../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html" title="interface in io.github.wysohn.triggerreactor.core.bridge.entity">IPlayer</a>&nbsp;player,
          <a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/InventoryTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.inventory">InventoryTrigger</a>&nbsp;trigger)</code>&nbsp;</td>
@@ -354,10 +358,19 @@ implements org.bukkit.event.Listener</pre>
 <a name="onInventoryClose-org.bukkit.event.inventory.InventoryCloseEvent-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>onInventoryClose</h4>
 <pre>public&nbsp;void&nbsp;onInventoryClose(org.bukkit.event.inventory.InventoryCloseEvent&nbsp;e)</pre>
+</li>
+</ul>
+<a name="onQuit-org.bukkit.event.player.PlayerQuitEvent-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>onQuit</h4>
+<pre>public&nbsp;void&nbsp;onQuit(org.bukkit.event.player.PlayerQuitEvent&nbsp;event)</pre>
 </li>
 </ul>
 </li>

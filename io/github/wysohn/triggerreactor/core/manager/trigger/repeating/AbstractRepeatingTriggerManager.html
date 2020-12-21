@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":6,"i9":10,"i10":10,"i11":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -117,10 +117,6 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ConfigurationFileIO.html" title="interface in io.github.wysohn.triggerreactor.core.manager.trigger">ConfigurationFileIO</a></dd>
-</dl>
-<dl>
 <dt>Direct Known Subclasses:</dt>
 <dd><a href="../../../../../../../../io/github/wysohn/triggerreactor/sponge/manager/trigger/RepeatingTriggerManager.html" title="class in io.github.wysohn.triggerreactor.sponge.manager.trigger">RepeatingTriggerManager</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/RepeatingTriggerManager.html" title="class in io.github.wysohn.triggerreactor.bukkit.manager.trigger">RepeatingTriggerManager</a></dd>
 </dl>
@@ -186,7 +182,7 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;io.github.wysohn.triggerreactor.core.manager.trigger.<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger">AbstractTriggerManager</a></h3>
-<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#folder">folder</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#triggers">triggers</a></code></li>
+<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#configSourceFactory">configSourceFactory</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#folder">folder</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#loader">loader</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.io.github.wysohn.triggerreactor.core.manager.Manager">
@@ -210,7 +206,7 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/AbstractRepeatingTriggerManager.html#AbstractRepeatingTriggerManager-io.github.wysohn.triggerreactor.core.main.TriggerReactorCore-java.io.File-">AbstractRepeatingTriggerManager</a></span>(<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html" title="class in io.github.wysohn.triggerreactor.core.main">TriggerReactorCore</a>&nbsp;plugin,
-                               <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;tirggerFolder)</code>&nbsp;</td>
+                               <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;folder)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -222,7 +218,7 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -244,57 +240,33 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/AbstractRepeatingTriggerManager.html#deleteInfo-io.github.wysohn.triggerreactor.core.manager.trigger.repeating.RepeatingTrigger-">deleteInfo</a></span>(<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/RepeatingTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.repeating">RepeatingTrigger</a>&nbsp;trigger)</code>
-<div class="block">Default behavior is delete one file associated with the trigger.</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/AbstractRepeatingTriggerManager.html#deleteTrigger-java.lang.String-">deleteTrigger</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;triggerName)</code>
-<div class="block">Completely clean up the Repeating Trigger.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/RepeatingTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.repeating">RepeatingTrigger</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/AbstractRepeatingTriggerManager.html#getTrigger-java.lang.String-">getTrigger</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;triggerName)</code>
-<div class="block">Get Repeating Trigger with specified name.</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/AbstractRepeatingTriggerManager.html#isRunning-java.lang.String-">isRunning</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;triggerName)</code>
 <div class="block">Checks whether the specified trigger is running.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/AbstractRepeatingTriggerManager.html#reload--">reload</a></span>()</code>
 <div class="block">Reload all triggers</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/AbstractRepeatingTriggerManager.html#saveAll--">saveAll</a></span>()</code>
-<div class="block">Save all triggers</div>
-</td>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/RepeatingTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.repeating">RepeatingTrigger</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/AbstractRepeatingTriggerManager.html#remove-java.lang.String-">remove</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>protected abstract void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/AbstractRepeatingTriggerManager.html#saveInfo-io.github.wysohn.triggerreactor.core.manager.trigger.repeating.RepeatingTrigger-">saveInfo</a></span>(<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/RepeatingTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.repeating">RepeatingTrigger</a>&nbsp;trigger)</code>&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/AbstractRepeatingTriggerManager.html#showTriggerInfo-io.github.wysohn.triggerreactor.core.bridge.ICommandSender-io.github.wysohn.triggerreactor.core.manager.trigger.repeating.RepeatingTrigger-">showTriggerInfo</a></span>(<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/bridge/ICommandSender.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">ICommandSender</a>&nbsp;sender,
                <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/RepeatingTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.repeating">RepeatingTrigger</a>&nbsp;trigger)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/AbstractRepeatingTriggerManager.html#startTrigger-java.lang.String-">startTrigger</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;triggerName)</code>
 <div class="block">Attempts to start the trigger with provided trigger name.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/AbstractRepeatingTriggerManager.html#stopTrigger-java.lang.String-">stopTrigger</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;triggerName)</code>
 <div class="block">Attempts to stop the trigger.</div>
@@ -306,7 +278,7 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.wysohn.triggerreactor.core.manager.trigger.<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger">AbstractTriggerManager</a></h3>
-<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#extractName-java.io.File-">extractName</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getAllTriggers--">getAllTriggers</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getData-java.io.File-java.lang.String-">getData</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerFile-java.io.File-java.lang.String-boolean-">getTriggerFile</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerList-io.github.wysohn.triggerreactor.core.manager.trigger.AbstractTriggerManager.TriggerFilter-">getTriggerList</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#isTriggerFile-java.io.File-">isTriggerFile</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#reportWarnings-java.util.List-io.github.wysohn.triggerreactor.core.manager.trigger.Trigger-">reportWarnings</a></code></li>
+<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#get-java.lang.String-">get</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getAllTriggers--">getAllTriggers</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getFolder--">getFolder</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerFile-java.io.File-java.lang.String-boolean-">getTriggerFile</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerInfos--">getTriggerInfos</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerList-io.github.wysohn.triggerreactor.core.manager.trigger.AbstractTriggerManager.TriggerFilter-">getTriggerList</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#has-java.lang.String-">has</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#put-java.lang.String-T-">put</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#reload-java.lang.String-">reload</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#reportWarnings-java.util.List-io.github.wysohn.triggerreactor.core.manager.trigger.Trigger-">reportWarnings</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#saveAll--">saveAll</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.io.github.wysohn.triggerreactor.core.manager.Manager">
@@ -321,13 +293,6 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.io.github.wysohn.triggerreactor.core.manager.trigger.ConfigurationFileIO">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;io.github.wysohn.triggerreactor.core.manager.trigger.<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ConfigurationFileIO.html" title="interface in io.github.wysohn.triggerreactor.core.manager.trigger">ConfigurationFileIO</a></h3>
-<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ConfigurationFileIO.html#getData-java.io.File-java.lang.String-T-">getData</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ConfigurationFileIO.html#setData-java.io.File-java.lang.String-java.lang.Object-">setData</a></code></li>
 </ul>
 </li>
 </ul>
@@ -380,7 +345,7 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 <li class="blockList">
 <h4>AbstractRepeatingTriggerManager</h4>
 <pre>public&nbsp;AbstractRepeatingTriggerManager(<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html" title="class in io.github.wysohn.triggerreactor.core.main">TriggerReactorCore</a>&nbsp;plugin,
-                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;tirggerFolder)</pre>
+                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;folder)</pre>
 </li>
 </ul>
 </li>
@@ -401,39 +366,8 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/Manager.html#reload--">Manager</a></code></span></div>
 <div class="block">Reload all triggers</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/Manager.html#reload--">reload</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/Manager.html" title="class in io.github.wysohn.triggerreactor.core.manager">Manager</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="saveAll--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>saveAll</h4>
-<pre>public&nbsp;void&nbsp;saveAll()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/Manager.html#saveAll--">Manager</a></code></span></div>
-<div class="block">Save all triggers</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/Manager.html#saveAll--">saveAll</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/Manager.html" title="class in io.github.wysohn.triggerreactor.core.manager">Manager</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getTrigger-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getTrigger</h4>
-<pre>public&nbsp;<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/RepeatingTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.repeating">RepeatingTrigger</a>&nbsp;getTrigger(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;triggerName)</pre>
-<div class="block">Get Repeating Trigger with specified name.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>triggerName</code> - name of trigger</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>Repeating Trigger if found; null if not found.</dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#reload--">reload</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger">AbstractTriggerManager</a>&lt;<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/RepeatingTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.repeating">RepeatingTrigger</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -465,20 +399,6 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 </dl>
 </li>
 </ul>
-<a name="saveInfo-io.github.wysohn.triggerreactor.core.manager.trigger.repeating.RepeatingTrigger-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>saveInfo</h4>
-<pre>protected abstract&nbsp;void&nbsp;saveInfo(<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/RepeatingTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.repeating">RepeatingTrigger</a>&nbsp;trigger)
-                          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
-</dl>
-</li>
-</ul>
 <a name="createTrigger-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
@@ -504,35 +424,16 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 </dl>
 </li>
 </ul>
-<a name="deleteTrigger-java.lang.String-">
+<a name="remove-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>deleteTrigger</h4>
-<pre>public&nbsp;boolean&nbsp;deleteTrigger(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;triggerName)</pre>
-<div class="block">Completely clean up the Repeating Trigger. This also stops the thread if
- one was running already.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>triggerName</code> - name of the trigger</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>true on success; false if trigger with the name not found.</dd>
-</dl>
-</li>
-</ul>
-<a name="deleteInfo-io.github.wysohn.triggerreactor.core.manager.trigger.repeating.RepeatingTrigger-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>deleteInfo</h4>
-<pre>protected&nbsp;void&nbsp;deleteInfo(<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/RepeatingTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.repeating">RepeatingTrigger</a>&nbsp;trigger)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#deleteInfo-T-">AbstractTriggerManager</a></code></span></div>
-<div class="block">Default behavior is delete one file associated with the trigger. Override this method to change this behavior.</div>
+<h4>remove</h4>
+<pre>public&nbsp;<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/RepeatingTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.repeating">RepeatingTrigger</a>&nbsp;remove(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#deleteInfo-T-">deleteInfo</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger">AbstractTriggerManager</a>&lt;<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/RepeatingTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.repeating">RepeatingTrigger</a>&gt;</code></dd>
+<dd><code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#remove-java.lang.String-">remove</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger">AbstractTriggerManager</a>&lt;<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/repeating/RepeatingTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.repeating">RepeatingTrigger</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

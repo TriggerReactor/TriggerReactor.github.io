@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":42,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":42,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -122,10 +122,6 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ConfigurationFileIO.html" title="interface in io.github.wysohn.triggerreactor.core.manager.trigger">ConfigurationFileIO</a></dd>
-</dl>
-<dl>
 <dt>Direct Known Subclasses:</dt>
 <dd><a href="../../../../../../../../io/github/wysohn/triggerreactor/sponge/manager/trigger/AreaTriggerManager.html" title="class in io.github.wysohn.triggerreactor.sponge.manager.trigger">AreaTriggerManager</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/AreaTriggerManager.html" title="class in io.github.wysohn.triggerreactor.bukkit.manager.trigger">AreaTriggerManager</a></dd>
 </dl>
@@ -211,7 +207,7 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;io.github.wysohn.triggerreactor.core.manager.trigger.<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger">AbstractTriggerManager</a></h3>
-<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#folder">folder</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#triggers">triggers</a></code></li>
+<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#configSourceFactory">configSourceFactory</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#folder">folder</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#loader">loader</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.io.github.wysohn.triggerreactor.core.manager.Manager">
@@ -235,7 +231,7 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AbstractAreaTriggerManager.html#AbstractAreaTriggerManager-io.github.wysohn.triggerreactor.core.main.TriggerReactorCore-java.io.File-">AbstractAreaTriggerManager</a></span>(<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html" title="class in io.github.wysohn.triggerreactor.core.main">TriggerReactorCore</a>&nbsp;plugin,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;tirggerFolder)</code>&nbsp;</td>
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;folder)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -257,7 +253,7 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AbstractAreaTriggerManager.html#createArea-java.lang.String-io.github.wysohn.triggerreactor.core.manager.location.SimpleLocation-io.github.wysohn.triggerreactor.core.manager.location.SimpleLocation-">createArea</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
           <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/location/SimpleLocation.html" title="class in io.github.wysohn.triggerreactor.core.manager.location">SimpleLocation</a>&nbsp;smallest,
           <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/location/SimpleLocation.html" title="class in io.github.wysohn.triggerreactor.core.manager.location">SimpleLocation</a>&nbsp;largest)</code>
-<div class="block">This method does not check if world of smallest and largest are same.</div>
+<div class="block">Create a new Area Trigger.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -269,55 +265,35 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AbstractAreaTriggerManager.html#deleteArea-java.lang.String-">deleteArea</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
-<div class="block">Try to remove Area Trigger by given name</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AbstractAreaTriggerManager.html#deleteInfo-io.github.wysohn.triggerreactor.core.manager.trigger.area.AreaTrigger-">deleteInfo</a></span>(<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AreaTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.area">AreaTrigger</a>&nbsp;trigger)</code>
-<div class="block">Default behavior is delete one file associated with the trigger.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AreaTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.area">AreaTrigger</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AbstractAreaTriggerManager.html#getArea-java.lang.String-">getArea</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
-<div class="block">Try to get Area Trigger by given name</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util">Map.Entry</a>&lt;<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/location/Area.html" title="class in io.github.wysohn.triggerreactor.core.manager.location">Area</a>,<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AreaTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.area">AreaTrigger</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AbstractAreaTriggerManager.html#getAreaForLocation-io.github.wysohn.triggerreactor.core.manager.location.SimpleLocation-">getAreaForLocation</a></span>(<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/location/SimpleLocation.html" title="class in io.github.wysohn.triggerreactor.core.manager.location">SimpleLocation</a>&nbsp;sloc)</code>
 <div class="block">Get list of all Area Triggers containing this sloc.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util">Map.Entry</a>&lt;<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/location/Area.html" title="class in io.github.wysohn.triggerreactor.core.manager.location">Area</a>,<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AreaTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.area">AreaTrigger</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AbstractAreaTriggerManager.html#getAreas-io.github.wysohn.triggerreactor.core.manager.location.SimpleLocation-">getAreas</a></span>(<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/location/SimpleLocation.html" title="class in io.github.wysohn.triggerreactor.core.manager.location">SimpleLocation</a>&nbsp;sloc)</code>
 <div class="block">Try to get Area Triggers at given location</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/location/Area.html" title="class in io.github.wysohn.triggerreactor.core.manager.location">Area</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AbstractAreaTriggerManager.html#getConflictingAreas-io.github.wysohn.triggerreactor.core.manager.location.Area-java.util.function.Predicate-">getConflictingAreas</a></span>(<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/location/Area.html" title="class in io.github.wysohn.triggerreactor.core.manager.location">Area</a>&nbsp;area,
                    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function">Predicate</a>&lt;<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/location/Area.html" title="class in io.github.wysohn.triggerreactor.core.manager.location">Area</a>&gt;&nbsp;filter)</code>
 <div class="block">get all the area that is conflicting with given area.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AbstractAreaTriggerManager.html#reload--">reload</a></span>()</code>
 <div class="block">Reload all triggers</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AbstractAreaTriggerManager.html#saveAll--">saveAll</a></span>()</code>
-<div class="block">Save all triggers</div>
-</td>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AreaTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.area">AreaTrigger</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AbstractAreaTriggerManager.html#remove-java.lang.String-">remove</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AbstractAreaTriggerManager.html#setupArea-io.github.wysohn.triggerreactor.core.manager.trigger.area.AreaTrigger-">setupArea</a></span>(<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AreaTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.area">AreaTrigger</a>&nbsp;trigger)</code>
 <div class="block">reset the area cache.</div>
@@ -336,7 +312,7 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.wysohn.triggerreactor.core.manager.trigger.<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger">AbstractTriggerManager</a></h3>
-<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#extractName-java.io.File-">extractName</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getAllTriggers--">getAllTriggers</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getData-java.io.File-java.lang.String-">getData</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerFile-java.io.File-java.lang.String-boolean-">getTriggerFile</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerList-io.github.wysohn.triggerreactor.core.manager.trigger.AbstractTriggerManager.TriggerFilter-">getTriggerList</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#isTriggerFile-java.io.File-">isTriggerFile</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#reportWarnings-java.util.List-io.github.wysohn.triggerreactor.core.manager.trigger.Trigger-">reportWarnings</a></code></li>
+<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#get-java.lang.String-">get</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getAllTriggers--">getAllTriggers</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getFolder--">getFolder</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerFile-java.io.File-java.lang.String-boolean-">getTriggerFile</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerInfos--">getTriggerInfos</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerList-io.github.wysohn.triggerreactor.core.manager.trigger.AbstractTriggerManager.TriggerFilter-">getTriggerList</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#has-java.lang.String-">has</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#put-java.lang.String-T-">put</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#reload-java.lang.String-">reload</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#reportWarnings-java.util.List-io.github.wysohn.triggerreactor.core.manager.trigger.Trigger-">reportWarnings</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#saveAll--">saveAll</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.io.github.wysohn.triggerreactor.core.manager.Manager">
@@ -351,13 +327,6 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.io.github.wysohn.triggerreactor.core.manager.trigger.ConfigurationFileIO">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;io.github.wysohn.triggerreactor.core.manager.trigger.<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ConfigurationFileIO.html" title="interface in io.github.wysohn.triggerreactor.core.manager.trigger">ConfigurationFileIO</a></h3>
-<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ConfigurationFileIO.html#getData-java.io.File-java.lang.String-T-">getData</a>, <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ConfigurationFileIO.html#setData-java.io.File-java.lang.String-java.lang.Object-">setData</a></code></li>
 </ul>
 </li>
 </ul>
@@ -459,7 +428,7 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 <li class="blockList">
 <h4>AbstractAreaTriggerManager</h4>
 <pre>public&nbsp;AbstractAreaTriggerManager(<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html" title="class in io.github.wysohn.triggerreactor.core.main">TriggerReactorCore</a>&nbsp;plugin,
-                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;tirggerFolder)</pre>
+                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;folder)</pre>
 </li>
 </ul>
 </li>
@@ -480,23 +449,8 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/Manager.html#reload--">Manager</a></code></span></div>
 <div class="block">Reload all triggers</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/Manager.html#reload--">reload</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/Manager.html" title="class in io.github.wysohn.triggerreactor.core.manager">Manager</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="saveAll--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>saveAll</h4>
-<pre>public&nbsp;void&nbsp;saveAll()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/Manager.html#saveAll--">Manager</a></code></span></div>
-<div class="block">Save all triggers</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/Manager.html#saveAll--">saveAll</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/Manager.html" title="class in io.github.wysohn.triggerreactor.core.manager">Manager</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#reload--">reload</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger">AbstractTriggerManager</a>&lt;<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AreaTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.area">AreaTrigger</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -544,15 +498,14 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 <pre>public&nbsp;boolean&nbsp;createArea(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
                           <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/location/SimpleLocation.html" title="class in io.github.wysohn.triggerreactor.core.manager.location">SimpleLocation</a>&nbsp;smallest,
                           <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/location/SimpleLocation.html" title="class in io.github.wysohn.triggerreactor.core.manager.location">SimpleLocation</a>&nbsp;largest)</pre>
-<div class="block">This method does not check if world of smallest and largest are same.
- Also <b>check confliction with <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AbstractAreaTriggerManager.html#getConflictingAreas-io.github.wysohn.triggerreactor.core.manager.location.Area-java.util.function.Predicate-"><code>getConflictingAreas(Area, Predicate)</code></a> before</b> using this method.</div>
+<div class="block">Create a new Area Trigger.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>name</code> - </dd>
-<dd><code>smallest</code> - </dd>
-<dd><code>largest</code> - </dd>
+<dd><code>name</code> - name of the Area Trigger.</dd>
+<dd><code>smallest</code> - smallest point (ex. 0,0,0)</dd>
+<dd><code>largest</code> - largest point(ex. 15,15,15)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>true on success; false if exact same area already exist.</dd>
+<dd>true on success; false if exact same area (same smallest and largest) already exist.</dd>
 </dl>
 </li>
 </ul>
@@ -563,42 +516,23 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 <li class="blockList">
 <h4>setupArea</h4>
 <pre>protected&nbsp;void&nbsp;setupArea(<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AreaTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.area">AreaTrigger</a>&nbsp;trigger)</pre>
-<div class="block">reset the area cache. Should be called for reloading.</div>
+<div class="block">reset the area cache. Should be called on reload or on Area Trigger created.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>trigger</code> - </dd>
 </dl>
 </li>
 </ul>
-<a name="getArea-java.lang.String-">
+<a name="remove-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getArea</h4>
-<pre>public&nbsp;<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AreaTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.area">AreaTrigger</a>&nbsp;getArea(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
-<div class="block">Try to get Area Trigger by given name</div>
+<h4>remove</h4>
+<pre>public&nbsp;<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AreaTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.area">AreaTrigger</a>&nbsp;remove(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
 <dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>name</code> - </dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>Area if found; null if nothing</dd>
-</dl>
-</li>
-</ul>
-<a name="deleteArea-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>deleteArea</h4>
-<pre>public&nbsp;boolean&nbsp;deleteArea(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
-<div class="block">Try to remove Area Trigger by given name</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>name</code> - </dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>false if can't find any Area Trigger with the name; true if deleted.</dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#remove-java.lang.String-">remove</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger">AbstractTriggerManager</a>&lt;<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AreaTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.area">AreaTrigger</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -621,7 +555,7 @@ extends <a href="../../../../../../../../io/github/wysohn/triggerreactor/core/ma
 <a name="deleteArea-io.github.wysohn.triggerreactor.core.manager.location.SimpleLocation-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>deleteArea</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
@@ -633,21 +567,6 @@ public&nbsp;boolean&nbsp;deleteArea(<a href="../../../../../../../../io/github/w
 <dd><code>sloc</code> - </dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>false if no area found at location; true if deleted</dd>
-</dl>
-</li>
-</ul>
-<a name="deleteInfo-io.github.wysohn.triggerreactor.core.manager.trigger.area.AreaTrigger-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>deleteInfo</h4>
-<pre>protected&nbsp;void&nbsp;deleteInfo(<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AreaTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.area">AreaTrigger</a>&nbsp;trigger)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#deleteInfo-T-">AbstractTriggerManager</a></code></span></div>
-<div class="block">Default behavior is delete one file associated with the trigger. Override this method to change this behavior.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#deleteInfo-T-">deleteInfo</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger">AbstractTriggerManager</a>&lt;<a href="../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/area/AreaTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.area">AreaTrigger</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

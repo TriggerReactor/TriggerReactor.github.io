@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10};
+var methods = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -123,7 +123,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/BukkitConfigurationFileIO.html" title="interface in io.github.wysohn.triggerreactor.bukkit.manager.trigger">BukkitConfigurationFileIO</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/BukkitTriggerManager.html" title="interface in io.github.wysohn.triggerreactor.bukkit.manager.trigger">BukkitTriggerManager</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ConfigurationFileIO.html" title="interface in io.github.wysohn.triggerreactor.core.manager.trigger">ConfigurationFileIO</a>, org.bukkit.event.Listener</dd>
+<dd><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/BukkitTriggerManager.html" title="interface in io.github.wysohn.triggerreactor.bukkit.manager.trigger">BukkitTriggerManager</a>, org.bukkit.event.Listener</dd>
 </dl>
 <hr>
 <br>
@@ -162,14 +162,14 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;io.github.wysohn.triggerreactor.core.manager.trigger.command.<a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.command">AbstractCommandTriggerManager</a></h3>
-<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#aliasesMap">aliasesMap</a></code></li>
+<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#CANDIDATES">CANDIDATES</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#HINT">HINT</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#TABS">TABS</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.io.github.wysohn.triggerreactor.core.manager.trigger.AbstractTriggerManager">
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;io.github.wysohn.triggerreactor.core.manager.trigger.<a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger">AbstractTriggerManager</a></h3>
-<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#folder">folder</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#triggers">triggers</a></code></li>
+<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#configSourceFactory">configSourceFactory</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#folder">folder</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#loader">loader</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.io.github.wysohn.triggerreactor.core.manager.Manager">
@@ -210,8 +210,21 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/CommandTriggerManager.html#onCommand-org.bukkit.event.player.PlayerCommandPreprocessEvent-">onCommand</a></span>(org.bukkit.event.player.PlayerCommandPreprocessEvent&nbsp;e)</code>&nbsp;</td>
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/CommandTriggerManager.html#registerCommand-java.lang.String-io.github.wysohn.triggerreactor.core.manager.trigger.command.CommandTrigger-">registerCommand</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;triggerName,
+               <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/CommandTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.command">CommandTrigger</a>&nbsp;trigger)</code>
+<div class="block">Register this command to command map.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/CommandTriggerManager.html#synchronizeCommandMap--">synchronizeCommandMap</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/CommandTriggerManager.html#unregisterCommand-java.lang.String-">unregisterCommand</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;triggerName)</code>
+<div class="block">Unregister this command from command map.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -219,14 +232,14 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.wysohn.triggerreactor.core.manager.trigger.command.<a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.command">AbstractCommandTriggerManager</a></h3>
-<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#addCommandTrigger-io.github.wysohn.triggerreactor.core.bridge.ICommandSender-java.lang.String-java.lang.String-">addCommandTrigger</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#createTempCommandTrigger-java.lang.String-">createTempCommandTrigger</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#deleteInfo-io.github.wysohn.triggerreactor.core.manager.trigger.command.CommandTrigger-">deleteInfo</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#getCommandTrigger-java.lang.String-">getCommandTrigger</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#hasCommandTrigger-java.lang.String-">hasCommandTrigger</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#registerAliases-io.github.wysohn.triggerreactor.core.manager.trigger.command.CommandTrigger-">registerAliases</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#reload--">reload</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#removeAliases-io.github.wysohn.triggerreactor.core.manager.trigger.command.CommandTrigger-">removeAliases</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#removeCommandTrigger-java.lang.String-">removeCommandTrigger</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#saveAll--">saveAll</a></code></li>
+<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#addCommandTrigger-io.github.wysohn.triggerreactor.core.bridge.ICommandSender-java.lang.String-java.lang.String-">addCommandTrigger</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#createTempCommandTrigger-java.lang.String-">createTempCommandTrigger</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#reload--">reload</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#reload-java.lang.String-">reload</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#remove-java.lang.String-">remove</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#reregisterCommand-java.lang.String-">reregisterCommand</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.io.github.wysohn.triggerreactor.core.manager.trigger.AbstractTriggerManager">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.wysohn.triggerreactor.core.manager.trigger.<a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger">AbstractTriggerManager</a></h3>
-<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#extractName-java.io.File-">extractName</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getAllTriggers--">getAllTriggers</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getData-java.io.File-java.lang.String-">getData</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerFile-java.io.File-java.lang.String-boolean-">getTriggerFile</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerList-io.github.wysohn.triggerreactor.core.manager.trigger.AbstractTriggerManager.TriggerFilter-">getTriggerList</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#isTriggerFile-java.io.File-">isTriggerFile</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#reportWarnings-java.util.List-io.github.wysohn.triggerreactor.core.manager.trigger.Trigger-">reportWarnings</a></code></li>
+<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#get-java.lang.String-">get</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getAllTriggers--">getAllTriggers</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getFolder--">getFolder</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerFile-java.io.File-java.lang.String-boolean-">getTriggerFile</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerInfos--">getTriggerInfos</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerList-io.github.wysohn.triggerreactor.core.manager.trigger.AbstractTriggerManager.TriggerFilter-">getTriggerList</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#has-java.lang.String-">has</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#put-java.lang.String-T-">put</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#reportWarnings-java.util.List-io.github.wysohn.triggerreactor.core.manager.trigger.Trigger-">reportWarnings</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#saveAll--">saveAll</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.io.github.wysohn.triggerreactor.core.manager.Manager">
@@ -241,13 +254,6 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.io.github.wysohn.triggerreactor.bukkit.manager.trigger.BukkitConfigurationFileIO">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;io.github.wysohn.triggerreactor.bukkit.manager.trigger.<a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/BukkitConfigurationFileIO.html" title="interface in io.github.wysohn.triggerreactor.bukkit.manager.trigger">BukkitConfigurationFileIO</a></h3>
-<code><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/BukkitConfigurationFileIO.html#getData-java.io.File-java.lang.String-T-">getData</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/BukkitConfigurationFileIO.html#setData-java.io.File-java.lang.String-java.lang.Object-">setData</a></code></li>
 </ul>
 </li>
 </ul>
@@ -280,13 +286,61 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="onCommand-org.bukkit.event.player.PlayerCommandPreprocessEvent-">
+<a name="registerCommand-java.lang.String-io.github.wysohn.triggerreactor.core.manager.trigger.command.CommandTrigger-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerCommand</h4>
+<pre>protected&nbsp;boolean&nbsp;registerCommand(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;triggerName,
+                                  <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/CommandTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.command">CommandTrigger</a>&nbsp;trigger)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#registerCommand-java.lang.String-io.github.wysohn.triggerreactor.core.manager.trigger.command.CommandTrigger-">AbstractCommandTriggerManager</a></code></span></div>
+<div class="block">Register this command to command map. If the command is already in use by another plugin,
+ the original command will be overriden, and the original command will be recovered when
+ the trigger is un-registered. However, if the trigger's name is already registered and
+ also overriden by another command trigger, this method does nothing and return false.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#registerCommand-java.lang.String-io.github.wysohn.triggerreactor.core.manager.trigger.command.CommandTrigger-">registerCommand</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.command">AbstractCommandTriggerManager</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>triggerName</code> - name of the trigger to register</dd>
+<dd><code>trigger</code> - the actual trigger instance</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if registered; false if the command is already overriden by another command trigger and
+ is also already registered trigger, it will return false.</dd>
+</dl>
+</li>
+</ul>
+<a name="unregisterCommand-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unregisterCommand</h4>
+<pre>protected&nbsp;boolean&nbsp;unregisterCommand(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;triggerName)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#unregisterCommand-java.lang.String-">AbstractCommandTriggerManager</a></code></span></div>
+<div class="block">Unregister this command from command map.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#unregisterCommand-java.lang.String-">unregisterCommand</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.command">AbstractCommandTriggerManager</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>triggerName</code> - name of trigger to remove</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if unregistered; false if can't find the registered command.</dd>
+</dl>
+</li>
+</ul>
+<a name="synchronizeCommandMap--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>onCommand</h4>
-<pre>public&nbsp;void&nbsp;onCommand(org.bukkit.event.player.PlayerCommandPreprocessEvent&nbsp;e)</pre>
+<h4>synchronizeCommandMap</h4>
+<pre>protected&nbsp;void&nbsp;synchronizeCommandMap()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#synchronizeCommandMap--">synchronizeCommandMap</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.command">AbstractCommandTriggerManager</a></code></dd>
+</dl>
 </li>
 </ul>
 </li>

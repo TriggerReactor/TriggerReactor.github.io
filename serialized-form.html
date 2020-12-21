@@ -74,18 +74,237 @@
 <div class="serializedFormContainer">
 <ul class="blockList">
 <li class="blockList">
-<h2 title="Package">Package&nbsp;io.github.wysohn.triggerreactor.core.manager</h2>
+<h2 title="Package">Package&nbsp;io.github.wysohn.gsoncopy</h2>
 <ul class="blockList">
-<li class="blockList"><a name="io.github.wysohn.triggerreactor.core.manager.AbstractVariableManager.GlobalVariableAdapter">
+<li class="blockList"><a name="io.github.wysohn.gsoncopy.JsonIOException">
 <!--   -->
 </a>
-<h3>Class <a href="io/github/wysohn/triggerreactor/core/manager/AbstractVariableManager.GlobalVariableAdapter.html" title="class in io.github.wysohn.triggerreactor.core.manager">io.github.wysohn.triggerreactor.core.manager.AbstractVariableManager.GlobalVariableAdapter</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">HashMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt; implements Serializable</h3>
+<h3>Class <a href="io/github/wysohn/gsoncopy/JsonIOException.html" title="class in io.github.wysohn.gsoncopy">io.github.wysohn.gsoncopy.JsonIOException</a> extends <a href="io/github/wysohn/gsoncopy/JsonParseException.html" title="class in io.github.wysohn.gsoncopy">JsonParseException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="io.github.wysohn.gsoncopy.JsonParseException">
+<!--   -->
+</a>
+<h3>Class <a href="io/github/wysohn/gsoncopy/JsonParseException.html" title="class in io.github.wysohn.gsoncopy">io.github.wysohn.gsoncopy.JsonParseException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>-4086729973971783390L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="io.github.wysohn.gsoncopy.JsonSyntaxException">
+<!--   -->
+</a>
+<h3>Class <a href="io/github/wysohn/gsoncopy/JsonSyntaxException.html" title="class in io.github.wysohn.gsoncopy">io.github.wysohn.gsoncopy.JsonSyntaxException</a> extends <a href="io/github/wysohn/gsoncopy/JsonParseException.html" title="class in io.github.wysohn.gsoncopy">JsonParseException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;io.github.wysohn.gsoncopy.internal</h2>
+<ul class="blockList">
+<li class="blockList"><a name="io.github.wysohn.gsoncopy.internal.LazilyParsedNumber">
+<!--   -->
+</a>
+<h3>Class <a href="io/github/wysohn/gsoncopy/internal/LazilyParsedNumber.html" title="class in io.github.wysohn.gsoncopy.internal">io.github.wysohn.gsoncopy.internal.LazilyParsedNumber</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialization Methods</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>writeReplace</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;writeReplace()
+                     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/ObjectStreamException.html?is-external=true" title="class or interface in java.io">ObjectStreamException</a></pre>
+<div class="block">If somebody is unlucky enough to have to serialize one of these, serialize it
+ as a BigDecimal so that they won't need Gson on the other side to deserialize
+ it.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/ObjectStreamException.html?is-external=true" title="class or interface in java.io">ObjectStreamException</a></code></dd>
+</dl>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>value</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> value</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="io.github.wysohn.gsoncopy.internal.LinkedHashTreeMap">
+<!--   -->
+</a>
+<h3>Class <a href="io/github/wysohn/gsoncopy/internal/LinkedHashTreeMap.html" title="class in io.github.wysohn.gsoncopy.internal">io.github.wysohn.gsoncopy.internal.LinkedHashTreeMap</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractMap.html?is-external=true" title="class or interface in java.util">AbstractMap</a>&lt;<a href="io/github/wysohn/gsoncopy/internal/LinkedHashTreeMap.html" title="type parameter in LinkedHashTreeMap">K</a>,<a href="io/github/wysohn/gsoncopy/internal/LinkedHashTreeMap.html" title="type parameter in LinkedHashTreeMap">V</a>&gt; implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialization Methods</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>writeReplace</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;writeReplace()
+                     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/ObjectStreamException.html?is-external=true" title="class or interface in java.io">ObjectStreamException</a></pre>
+<div class="block">If somebody is unlucky enough to have to serialize one of these, serialize it
+ as a LinkedHashMap so that they won't need Gson on the other side to
+ deserialize it. Using serialization defeats our DoS defence, so most apps
+ shouldn't use it.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/ObjectStreamException.html?is-external=true" title="class or interface in java.io">ObjectStreamException</a></code></dd>
+</dl>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>comparator</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">Comparator</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">T</a>&gt; comparator</pre>
+</li>
+<li class="blockList">
+<h4>table</h4>
+<pre>io.github.wysohn.gsoncopy.internal.LinkedHashTreeMap.Node&lt;K,V&gt;[] table</pre>
+</li>
+<li class="blockList">
+<h4>header</h4>
+<pre>io.github.wysohn.gsoncopy.internal.LinkedHashTreeMap.Node&lt;K,V&gt; header</pre>
+</li>
+<li class="blockList">
+<h4>size</h4>
+<pre>int size</pre>
+</li>
+<li class="blockList">
+<h4>modCount</h4>
+<pre>int modCount</pre>
+</li>
+<li class="blockList">
+<h4>threshold</h4>
+<pre>int threshold</pre>
+</li>
+<li class="blockList">
+<h4>entrySet</h4>
+<pre>io.github.wysohn.gsoncopy.internal.LinkedHashTreeMap.EntrySet entrySet</pre>
+</li>
+<li class="blockListLast">
+<h4>keySet</h4>
+<pre>io.github.wysohn.gsoncopy.internal.LinkedHashTreeMap.KeySet keySet</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="io.github.wysohn.gsoncopy.internal.LinkedTreeMap">
+<!--   -->
+</a>
+<h3>Class <a href="io/github/wysohn/gsoncopy/internal/LinkedTreeMap.html" title="class in io.github.wysohn.gsoncopy.internal">io.github.wysohn.gsoncopy.internal.LinkedTreeMap</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractMap.html?is-external=true" title="class or interface in java.util">AbstractMap</a>&lt;<a href="io/github/wysohn/gsoncopy/internal/LinkedTreeMap.html" title="type parameter in LinkedTreeMap">K</a>,<a href="io/github/wysohn/gsoncopy/internal/LinkedTreeMap.html" title="type parameter in LinkedTreeMap">V</a>&gt; implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialization Methods</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>writeReplace</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;writeReplace()
+                     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/ObjectStreamException.html?is-external=true" title="class or interface in java.io">ObjectStreamException</a></pre>
+<div class="block">If somebody is unlucky enough to have to serialize one of these, serialize it
+ as a LinkedHashMap so that they won't need Gson on the other side to
+ deserialize it. Using serialization defeats our DoS defence, so most apps
+ shouldn't use it.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/ObjectStreamException.html?is-external=true" title="class or interface in java.io">ObjectStreamException</a></code></dd>
+</dl>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>comparator</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">Comparator</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">T</a>&gt; comparator</pre>
+</li>
+<li class="blockList">
+<h4>root</h4>
+<pre>io.github.wysohn.gsoncopy.internal.LinkedTreeMap.Node&lt;K,V&gt; root</pre>
+</li>
+<li class="blockList">
+<h4>size</h4>
+<pre>int size</pre>
+</li>
+<li class="blockList">
+<h4>modCount</h4>
+<pre>int modCount</pre>
+</li>
+<li class="blockList">
+<h4>header</h4>
+<pre>io.github.wysohn.gsoncopy.internal.LinkedTreeMap.Node&lt;K,V&gt; header</pre>
+</li>
+<li class="blockList">
+<h4>entrySet</h4>
+<pre>io.github.wysohn.gsoncopy.internal.LinkedTreeMap.EntrySet entrySet</pre>
+</li>
+<li class="blockListLast">
+<h4>keySet</h4>
+<pre>io.github.wysohn.gsoncopy.internal.LinkedTreeMap.KeySet keySet</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;io.github.wysohn.gsoncopy.stream</h2>
+<ul class="blockList">
+<li class="blockList"><a name="io.github.wysohn.gsoncopy.stream.MalformedJsonException">
+<!--   -->
+</a>
+<h3>Class <a href="io/github/wysohn/gsoncopy/stream/MalformedJsonException.html" title="class in io.github.wysohn.gsoncopy.stream">io.github.wysohn.gsoncopy.stream.MalformedJsonException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;io.github.wysohn.triggerreactor.core.config</h2>
+<ul class="blockList">
+<li class="blockList"><a name="io.github.wysohn.triggerreactor.core.config.InvalidTrgConfigurationException">
+<!--   -->
+</a>
+<h3>Class <a href="io/github/wysohn/triggerreactor/core/config/InvalidTrgConfigurationException.html" title="class in io.github.wysohn.triggerreactor.core.config">io.github.wysohn.triggerreactor.core.config.InvalidTrgConfigurationException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a> implements Serializable</h3>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;io.github.wysohn.triggerreactor.core.manager</h2>
+<ul class="blockList">
+<li class="blockList"><a name="io.github.wysohn.triggerreactor.core.manager.GlobalVariableManager.GlobalVariableAdapter">
+<!--   -->
+</a>
+<h3>Class <a href="io/github/wysohn/triggerreactor/core/manager/GlobalVariableManager.GlobalVariableAdapter.html" title="class in io.github.wysohn.triggerreactor.core.manager">io.github.wysohn.triggerreactor.core.manager.GlobalVariableManager.GlobalVariableAdapter</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">HashMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt; implements Serializable</h3>
 </li>
 </ul>
 </li>
 <li class="blockList">
 <h2 title="Package">Package&nbsp;io.github.wysohn.triggerreactor.core.manager.location</h2>
 <ul class="blockList">
+<li class="blockList"><a name="io.github.wysohn.triggerreactor.core.manager.location.SimpleChunkLocation.SimpleChunkLocationFormatException">
+<!--   -->
+</a>
+<h3>Class <a href="io/github/wysohn/triggerreactor/core/manager/location/SimpleChunkLocation.SimpleChunkLocationFormatException.html" title="class in io.github.wysohn.triggerreactor.core.manager.location">io.github.wysohn.triggerreactor.core.manager.location.SimpleChunkLocation.SimpleChunkLocationFormatException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+</li>
 <li class="blockList"><a name="io.github.wysohn.triggerreactor.core.manager.location.SimpleLocation.SimpleLocationFormatException">
 <!--   -->
 </a>

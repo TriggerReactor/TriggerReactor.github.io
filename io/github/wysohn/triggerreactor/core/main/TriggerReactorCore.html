@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":10,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":9,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":10,"i36":6,"i37":6,"i38":6,"i39":10,"i40":10,"i41":6,"i42":10,"i43":6,"i44":6,"i45":10,"i46":10,"i47":10,"i48":9,"i49":6,"i50":6,"i51":6,"i52":6,"i53":6,"i54":6,"i55":38,"i56":38,"i57":6,"i58":6,"i59":6,"i60":6,"i61":10,"i62":10};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":9,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":10,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":10,"i36":10,"i37":6,"i38":6,"i39":10,"i40":10,"i41":6,"i42":10,"i43":6,"i44":6,"i45":10,"i46":10,"i47":10,"i48":9,"i49":6,"i50":6,"i51":6,"i52":6,"i53":6,"i54":6,"i55":38,"i56":38,"i57":6,"i58":6,"i59":6,"i60":6,"i61":10,"i62":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -141,11 +141,15 @@ implements <a href="../../../../../../io/github/wysohn/triggerreactor/core/scrip
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent">ExecutorService</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#cachedThreadPool">cachedThreadPool</a></span></code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#CACHED_THREAD_POOL">CACHED_THREAD_POOL</a></span></code>
 <div class="block">Cached Pool for thread execution.</div>
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#PERMISSION">PERMISSION</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/share/api/AbstractAPISupport.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.share.api">AbstractAPISupport</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#sharedVars">sharedVars</a></span></code>&nbsp;</td>
 </tr>
@@ -201,7 +205,7 @@ implements <a href="../../../../../../io/github/wysohn/triggerreactor/core/scrip
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>protected abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#createEmptyPlayerEvent-io.github.wysohn.triggerreactor.core.bridge.ICommandSender-">createEmptyPlayerEvent</a></span>(<a href="../../../../../../io/github/wysohn/triggerreactor/core/bridge/ICommandSender.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">ICommandSender</a>&nbsp;sender)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
@@ -265,80 +269,80 @@ implements <a href="../../../../../../io/github/wysohn/triggerreactor/core/scrip
 </td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/config/ConfigManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.config">ConfigManager</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#getConfigManager--">getConfigManager</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i15" class="rowColor">
 <td class="colFirst"><code>abstract <a href="../../../../../../io/github/wysohn/triggerreactor/core/bridge/ICommandSender.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">ICommandSender</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#getConsoleSender--">getConsoleSender</a></span>()</code>
 <div class="block">get sender instance of the console</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>abstract <a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/custom/AbstractCustomTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.custom">AbstractCustomTriggerManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#getCustomManager--">getCustomManager</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#getCustomVarsForTrigger-java.lang.Object-">getCustomVarsForTrigger</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;context)</code>
 <div class="block">extract useful custom variables manually from 'context'</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#getDataFolder--">getDataFolder</a></span>()</code>
 <div class="block">Get folder where the plugin files will be saved.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>abstract <a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/AbstractExecutorManager.html" title="class in io.github.wysohn.triggerreactor.core.manager">AbstractExecutorManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#getExecutorManager--">getExecutorManager</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html" title="class in io.github.wysohn.triggerreactor.core.main">TriggerReactorCore</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#getInstance--">getInstance</a></span>()</code>
 <div class="block">get instance of this class.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>abstract <a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/AbstractInventoryEditManager.html" title="class in io.github.wysohn.triggerreactor.core.manager">AbstractInventoryEditManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#getInvEditManager--">getInvEditManager</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
-<td class="colFirst"><code>abstract <a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.inventory">AbstractInventoryTriggerManager</a></code></td>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>abstract <a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.inventory">AbstractInventoryTriggerManager</a>&lt;? extends <a href="../../../../../../io/github/wysohn/triggerreactor/core/bridge/IInventory.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">IInventory</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#getInvManager--">getInvManager</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>abstract <a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/AbstractPlayerLocationManager.html" title="class in io.github.wysohn.triggerreactor.core.manager">AbstractPlayerLocationManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#getLocationManager--">getLocationManager</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html?is-external=true" title="class or interface in java.util.logging">Logger</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#getLogger--">getLogger</a></span>()</code>
 <div class="block">get Logger.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>abstract &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#getMain--">getMain</a></span>()</code>
 <div class="block">Get the main class instance.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>abstract <a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/named/AbstractNamedTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.named">AbstractNamedTriggerManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#getNamedTriggerManager--">getNamedTriggerManager</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>abstract <a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/AbstractPermissionManager.html" title="class in io.github.wysohn.triggerreactor.core.manager">AbstractPermissionManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#getPermissionManager--">getPermissionManager</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>abstract <a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/AbstractPlaceholderManager.html" title="class in io.github.wysohn.triggerreactor.core.manager">AbstractPlaceholderManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#getPlaceholderManager--">getPlaceholderManager</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
-<td class="colFirst"><code>protected abstract <a href="../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html" title="interface in io.github.wysohn.triggerreactor.core.bridge.entity">IPlayer</a></code></td>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>abstract <a href="../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html" title="interface in io.github.wysohn.triggerreactor.core.bridge.entity">IPlayer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#getPlayer-java.lang.String-">getPlayer</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+</tr>
+<tr id="i29" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/PluginConfigManager.html" title="class in io.github.wysohn.triggerreactor.core.manager">PluginConfigManager</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#getPluginConfigManager--">getPluginConfigManager</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i30" class="altColor">
 <td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
@@ -367,7 +371,7 @@ implements <a href="../../../../../../io/github/wysohn/triggerreactor/core/scrip
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#getSharedVars--">getSharedVars</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i36" class="altColor">
-<td class="colFirst"><code>abstract <a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/AbstractVariableManager.html" title="class in io.github.wysohn.triggerreactor.core.manager">AbstractVariableManager</a></code></td>
+<td class="colFirst"><code><a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/GlobalVariableManager.html" title="class in io.github.wysohn.triggerreactor.core.manager">GlobalVariableManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#getVariableManager--">getVariableManager</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i37" class="rowColor">
@@ -432,7 +436,8 @@ implements <a href="../../../../../../io/github/wysohn/triggerreactor/core/scrip
 </tr>
 <tr id="i48" class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#onTabComplete-java.lang.String:A-">onTabComplete</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;args)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html#onTabComplete-io.github.wysohn.triggerreactor.core.bridge.ICommandSender-java.lang.String:A-">onTabComplete</a></span>(<a href="../../../../../../io/github/wysohn/triggerreactor/core/bridge/ICommandSender.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">ICommandSender</a>&nbsp;sender,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;args)</code>&nbsp;</td>
 </tr>
 <tr id="i49" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
@@ -547,23 +552,36 @@ implements <a href="../../../../../../io/github/wysohn/triggerreactor/core/scrip
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="cachedThreadPool">
+<a name="PERMISSION">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>cachedThreadPool</h4>
-<pre>protected static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent">ExecutorService</a> cachedThreadPool</pre>
-<div class="block">Cached Pool for thread execution.</div>
+<h4>PERMISSION</h4>
+<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> PERMISSION</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../constant-values.html#io.github.wysohn.triggerreactor.core.main.TriggerReactorCore.PERMISSION">Constant Field Values</a></dd>
+</dl>
 </li>
 </ul>
 <a name="sharedVars">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>sharedVars</h4>
 <pre>protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/share/api/AbstractAPISupport.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.share.api">AbstractAPISupport</a>&gt; sharedVars</pre>
+</li>
+</ul>
+<a name="CACHED_THREAD_POOL">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>CACHED_THREAD_POOL</h4>
+<pre>protected static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent">ExecutorService</a> CACHED_THREAD_POOL</pre>
+<div class="block">Cached Pool for thread execution.</div>
 </li>
 </ul>
 </li>
@@ -591,19 +609,6 @@ implements <a href="../../../../../../io/github/wysohn/triggerreactor/core/scrip
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getInstance--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getInstance</h4>
-<pre>public static&nbsp;<a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html" title="class in io.github.wysohn.triggerreactor.core.main">TriggerReactorCore</a>&nbsp;getInstance()</pre>
-<div class="block">get instance of this class.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-</dl>
-</li>
-</ul>
 <a name="getSharedVars--">
 <!--   -->
 </a>
@@ -638,15 +643,6 @@ implements <a href="../../../../../../io/github/wysohn/triggerreactor/core/scrip
 <li class="blockList">
 <h4>getPlaceholderManager</h4>
 <pre>public abstract&nbsp;<a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/AbstractPlaceholderManager.html" title="class in io.github.wysohn.triggerreactor.core.manager">AbstractPlaceholderManager</a>&nbsp;getPlaceholderManager()</pre>
-</li>
-</ul>
-<a name="getVariableManager--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getVariableManager</h4>
-<pre>public abstract&nbsp;<a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/AbstractVariableManager.html" title="class in io.github.wysohn.triggerreactor.core.manager">AbstractVariableManager</a>&nbsp;getVariableManager()</pre>
 </li>
 </ul>
 <a name="getScriptEditManager--">
@@ -718,7 +714,7 @@ implements <a href="../../../../../../io/github/wysohn/triggerreactor/core/scrip
 <ul class="blockList">
 <li class="blockList">
 <h4>getInvManager</h4>
-<pre>public abstract&nbsp;<a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.inventory">AbstractInventoryTriggerManager</a>&nbsp;getInvManager()</pre>
+<pre>public abstract&nbsp;<a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.inventory">AbstractInventoryTriggerManager</a>&lt;? extends <a href="../../../../../../io/github/wysohn/triggerreactor/core/bridge/IInventory.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">IInventory</a>&gt;&nbsp;getInvManager()</pre>
 </li>
 </ul>
 <a name="getInvEditManager--">
@@ -766,13 +762,22 @@ implements <a href="../../../../../../io/github/wysohn/triggerreactor/core/scrip
 <pre>public abstract&nbsp;<a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/named/AbstractNamedTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.named">AbstractNamedTriggerManager</a>&nbsp;getNamedTriggerManager()</pre>
 </li>
 </ul>
-<a name="getConfigManager--">
+<a name="getPluginConfigManager--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getConfigManager</h4>
-<pre>public&nbsp;<a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/config/ConfigManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.config">ConfigManager</a>&nbsp;getConfigManager()</pre>
+<h4>getPluginConfigManager</h4>
+<pre>public final&nbsp;<a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/PluginConfigManager.html" title="class in io.github.wysohn.triggerreactor.core.manager">PluginConfigManager</a>&nbsp;getPluginConfigManager()</pre>
+</li>
+</ul>
+<a name="getVariableManager--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVariableManager</h4>
+<pre>public final&nbsp;<a href="../../../../../../io/github/wysohn/triggerreactor/core/manager/GlobalVariableManager.html" title="class in io.github.wysohn.triggerreactor.core.manager">GlobalVariableManager</a>&nbsp;getVariableManager()</pre>
 </li>
 </ul>
 <a name="onCoreEnable--">
@@ -791,26 +796,6 @@ implements <a href="../../../../../../io/github/wysohn/triggerreactor/core/scrip
 <li class="blockList">
 <h4>onCoreDisable</h4>
 <pre>public&nbsp;void&nbsp;onCoreDisable()</pre>
-</li>
-</ul>
-<a name="onCommand-io.github.wysohn.triggerreactor.core.bridge.ICommandSender-java.lang.String-java.lang.String:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>onCommand</h4>
-<pre>public&nbsp;boolean&nbsp;onCommand(<a href="../../../../../../io/github/wysohn/triggerreactor/core/bridge/ICommandSender.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">ICommandSender</a>&nbsp;sender,
-                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;command,
-                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;args)</pre>
-</li>
-</ul>
-<a name="onTabComplete-java.lang.String:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>onTabComplete</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;onTabComplete(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;args)</pre>
 </li>
 </ul>
 <a name="removeLore-io.github.wysohn.triggerreactor.core.bridge.IItemStack-int-">
@@ -860,7 +845,7 @@ implements <a href="../../../../../../io/github/wysohn/triggerreactor/core/scrip
 <ul class="blockList">
 <li class="blockList">
 <h4>getPlayer</h4>
-<pre>protected abstract&nbsp;<a href="../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html" title="interface in io.github.wysohn.triggerreactor.core.bridge.entity">IPlayer</a>&nbsp;getPlayer(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<pre>public abstract&nbsp;<a href="../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html" title="interface in io.github.wysohn.triggerreactor.core.bridge.entity">IPlayer</a>&nbsp;getPlayer(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
 </li>
 </ul>
 <a name="createEmptyPlayerEvent-io.github.wysohn.triggerreactor.core.bridge.ICommandSender-">
@@ -869,7 +854,7 @@ implements <a href="../../../../../../io/github/wysohn/triggerreactor/core/scrip
 <ul class="blockList">
 <li class="blockList">
 <h4>createEmptyPlayerEvent</h4>
-<pre>protected abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;createEmptyPlayerEvent(<a href="../../../../../../io/github/wysohn/triggerreactor/core/bridge/ICommandSender.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">ICommandSender</a>&nbsp;sender)</pre>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;createEmptyPlayerEvent(<a href="../../../../../../io/github/wysohn/triggerreactor/core/bridge/ICommandSender.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">ICommandSender</a>&nbsp;sender)</pre>
 </li>
 </ul>
 <a name="sendCommandDesc-io.github.wysohn.triggerreactor.core.bridge.ICommandSender-java.lang.String-java.lang.String-">
@@ -1377,7 +1362,7 @@ protected abstract&nbsp;void&nbsp;sendDetails(<a href="../../../../../../io/gith
 <a name="getCustomVarsForTrigger-java.lang.Object-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getCustomVarsForTrigger</h4>
 <pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;getCustomVarsForTrigger(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;context)</pre>
@@ -1387,6 +1372,40 @@ protected abstract&nbsp;void&nbsp;sendDetails(<a href="../../../../../../io/gith
 <dd><code>context</code> - </dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 </dl>
+</li>
+</ul>
+<a name="onCommand-io.github.wysohn.triggerreactor.core.bridge.ICommandSender-java.lang.String-java.lang.String:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onCommand</h4>
+<pre>public&nbsp;boolean&nbsp;onCommand(<a href="../../../../../../io/github/wysohn/triggerreactor/core/bridge/ICommandSender.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">ICommandSender</a>&nbsp;sender,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;command,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;args)</pre>
+</li>
+</ul>
+<a name="getInstance--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInstance</h4>
+<pre>public static&nbsp;<a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html" title="class in io.github.wysohn.triggerreactor.core.main">TriggerReactorCore</a>&nbsp;getInstance()</pre>
+<div class="block">get instance of this class.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
+</li>
+</ul>
+<a name="onTabComplete-io.github.wysohn.triggerreactor.core.bridge.ICommandSender-java.lang.String:A-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>onTabComplete</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;onTabComplete(<a href="../../../../../../io/github/wysohn/triggerreactor/core/bridge/ICommandSender.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">ICommandSender</a>&nbsp;sender,
+                                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;args)</pre>
 </li>
 </ul>
 </li>

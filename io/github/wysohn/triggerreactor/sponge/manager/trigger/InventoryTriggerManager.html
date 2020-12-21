@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -105,7 +105,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger">io.github.wysohn.triggerreactor.core.manager.trigger.AbstractTriggerManager</a>&lt;<a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/InventoryTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.inventory">InventoryTrigger</a>&gt;</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.inventory">io.github.wysohn.triggerreactor.core.manager.trigger.inventory.AbstractInventoryTriggerManager</a></li>
+<li><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.inventory">io.github.wysohn.triggerreactor.core.manager.trigger.inventory.AbstractInventoryTriggerManager</a>&lt;org.spongepowered.api.item.inventory.ItemStack&gt;</li>
 <li>
 <ul class="inheritance">
 <li>io.github.wysohn.triggerreactor.sponge.manager.trigger.InventoryTriggerManager</li>
@@ -121,15 +121,10 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ConfigurationFileIO.html" title="interface in io.github.wysohn.triggerreactor.core.manager.trigger">ConfigurationFileIO</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/manager/trigger/SpongeConfigurationFileIO.html" title="interface in io.github.wysohn.triggerreactor.sponge.manager.trigger">SpongeConfigurationFileIO</a></dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">InventoryTriggerManager</span>
-extends <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.inventory">AbstractInventoryTriggerManager</a>
-implements <a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/manager/trigger/SpongeConfigurationFileIO.html" title="interface in io.github.wysohn.triggerreactor.sponge.manager.trigger">SpongeConfigurationFileIO</a></pre>
+extends <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.inventory">AbstractInventoryTriggerManager</a>&lt;org.spongepowered.api.item.inventory.ItemStack&gt;</pre>
 </li>
 </ul>
 </div>
@@ -169,7 +164,7 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;io.github.wysohn.triggerreactor.core.manager.trigger.<a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger">AbstractTriggerManager</a></h3>
-<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#folder">folder</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#triggers">triggers</a></code></li>
+<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#configSourceFactory">configSourceFactory</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#folder">folder</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#loader">loader</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.io.github.wysohn.triggerreactor.core.manager.Manager">
@@ -218,49 +213,27 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/manager/trigger/InventoryTriggerManager.html#deleteInfo-io.github.wysohn.triggerreactor.core.manager.trigger.inventory.InventoryTrigger-">deleteInfo</a></span>(<a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/InventoryTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.inventory">InventoryTrigger</a>&nbsp;trigger)</code>
-<div class="block">Default behavior is delete one file associated with the trigger.</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/manager/trigger/InventoryTriggerManager.html#fillInventory-io.github.wysohn.triggerreactor.core.manager.trigger.inventory.InventoryTrigger-int-io.github.wysohn.triggerreactor.core.bridge.IInventory-">fillInventory</a></span>(<a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/InventoryTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.inventory">InventoryTrigger</a>&nbsp;trigger,
              int&nbsp;size,
              <a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/IInventory.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">IInventory</a>&nbsp;inventory)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/manager/trigger/InventoryTriggerManager.html#getData-java.io.File-java.lang.String-T-">getData</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
-       T&nbsp;def)</code>
-<div class="block">Get data from yml file.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/manager/trigger/InventoryTriggerManager.html#onClick-org.spongepowered.api.event.item.inventory.ClickInventoryEvent-">onClick</a></span>(org.spongepowered.api.event.item.inventory.ClickInventoryEvent&nbsp;e)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/manager/trigger/InventoryTriggerManager.html#onClose-org.spongepowered.api.event.item.inventory.InteractInventoryEvent.Close-org.spongepowered.api.entity.living.player.Player-">onClose</a></span>(org.spongepowered.api.event.item.inventory.InteractInventoryEvent.Close&nbsp;e,
        org.spongepowered.api.entity.living.player.Player&nbsp;player)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/manager/trigger/InventoryTriggerManager.html#onOpen-org.spongepowered.api.event.item.inventory.InteractInventoryEvent.Open-">onOpen</a></span>(org.spongepowered.api.event.item.inventory.InteractInventoryEvent.Open&nbsp;e)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/IInventory.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">IInventory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/manager/trigger/InventoryTriggerManager.html#openGUI-org.spongepowered.api.entity.living.player.Player-java.lang.String-">openGUI</a></span>(org.spongepowered.api.entity.living.player.Player&nbsp;player,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/manager/trigger/InventoryTriggerManager.html#setData-java.io.File-java.lang.String-java.lang.Object-">setData</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>
-<div class="block">Set data into yml file.</div>
-</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -268,14 +241,14 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.wysohn.triggerreactor.core.manager.trigger.inventory.<a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.inventory">AbstractInventoryTriggerManager</a></h3>
-<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#createTrigger-int-java.lang.String-java.lang.String-">createTrigger</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#deleteTrigger-java.lang.String-">deleteTrigger</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#getSharedVarsForInventory-io.github.wysohn.triggerreactor.core.bridge.IInventory-">getSharedVarsForInventory</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#getTriggerForName-java.lang.String-">getTriggerForName</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#getTriggerForOpenInventory-io.github.wysohn.triggerreactor.core.bridge.IInventory-">getTriggerForOpenInventory</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#hasInventoryOpen-io.github.wysohn.triggerreactor.core.bridge.IInventory-">hasInventoryOpen</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#onInventoryClose-java.lang.Object-io.github.wysohn.triggerreactor.core.bridge.entity.IPlayer-io.github.wysohn.triggerreactor.core.bridge.IInventory-">onInventoryClose</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#openGUI-io.github.wysohn.triggerreactor.core.bridge.entity.IPlayer-java.lang.String-">openGUI</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#reload--">reload</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#saveAll--">saveAll</a></code></li>
+<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#createTrigger-int-java.lang.String-java.lang.String-">createTrigger</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#getSharedVarsForInventory-io.github.wysohn.triggerreactor.core.bridge.IInventory-">getSharedVarsForInventory</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#getTriggerForOpenInventory-io.github.wysohn.triggerreactor.core.bridge.IInventory-">getTriggerForOpenInventory</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#hasInventoryOpen-io.github.wysohn.triggerreactor.core.bridge.IInventory-">hasInventoryOpen</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#onInventoryClose-java.lang.Object-io.github.wysohn.triggerreactor.core.bridge.entity.IPlayer-io.github.wysohn.triggerreactor.core.bridge.IInventory-">onInventoryClose</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#openGUI-io.github.wysohn.triggerreactor.core.bridge.entity.IPlayer-java.lang.String-">openGUI</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.io.github.wysohn.triggerreactor.core.manager.trigger.AbstractTriggerManager">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.wysohn.triggerreactor.core.manager.trigger.<a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger">AbstractTriggerManager</a></h3>
-<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#extractName-java.io.File-">extractName</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getAllTriggers--">getAllTriggers</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getData-java.io.File-java.lang.String-">getData</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerFile-java.io.File-java.lang.String-boolean-">getTriggerFile</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerList-io.github.wysohn.triggerreactor.core.manager.trigger.AbstractTriggerManager.TriggerFilter-">getTriggerList</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#isTriggerFile-java.io.File-">isTriggerFile</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#reportWarnings-java.util.List-io.github.wysohn.triggerreactor.core.manager.trigger.Trigger-">reportWarnings</a></code></li>
+<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#get-java.lang.String-">get</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getAllTriggers--">getAllTriggers</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getFolder--">getFolder</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerFile-java.io.File-java.lang.String-boolean-">getTriggerFile</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerInfos--">getTriggerInfos</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#getTriggerList-io.github.wysohn.triggerreactor.core.manager.trigger.AbstractTriggerManager.TriggerFilter-">getTriggerList</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#has-java.lang.String-">has</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#put-java.lang.String-T-">put</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#reload--">reload</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#reload-java.lang.String-">reload</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#remove-java.lang.String-">remove</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#reportWarnings-java.util.List-io.github.wysohn.triggerreactor.core.manager.trigger.Trigger-">reportWarnings</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#saveAll--">saveAll</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.io.github.wysohn.triggerreactor.core.manager.Manager">
@@ -322,62 +295,6 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getData-java.io.File-java.lang.String-java.lang.Object-">
-<!--   -->
-</a><a name="getData-java.io.File-java.lang.String-T-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getData</h4>
-<pre>public&nbsp;&lt;T&gt;&nbsp;T&nbsp;getData(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file,
-                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
-                     T&nbsp;def)
-              throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ConfigurationFileIO.html#getData-java.io.File-java.lang.String-T-">ConfigurationFileIO</a></code></span></div>
-<div class="block">Get data from yml file. It may not needed depends on the trigger type.
- For CustomTrigger for example, you can get data from the yml file with
- this method.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ConfigurationFileIO.html#getData-java.io.File-java.lang.String-T-">getData</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ConfigurationFileIO.html" title="interface in io.github.wysohn.triggerreactor.core.manager.trigger">ConfigurationFileIO</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/manager/trigger/SpongeConfigurationFileIO.html#getData-java.io.File-java.lang.String-T-">getData</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/manager/trigger/SpongeConfigurationFileIO.html" title="interface in io.github.wysohn.triggerreactor.sponge.manager.trigger">SpongeConfigurationFileIO</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>file</code> - file to read data from</dd>
-<dd><code>key</code> - yml key</dd>
-<dd><code>def</code> - default value if key does not exists</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the value</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="setData-java.io.File-java.lang.String-java.lang.Object-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setData</h4>
-<pre>public&nbsp;void&nbsp;setData(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file,
-                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
-                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)
-             throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ConfigurationFileIO.html#setData-java.io.File-java.lang.String-java.lang.Object-">ConfigurationFileIO</a></code></span></div>
-<div class="block">Set data into yml file. It may not work depends on the trigger type.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ConfigurationFileIO.html#setData-java.io.File-java.lang.String-java.lang.Object-">setData</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ConfigurationFileIO.html" title="interface in io.github.wysohn.triggerreactor.core.manager.trigger">ConfigurationFileIO</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/manager/trigger/SpongeConfigurationFileIO.html#setData-java.io.File-java.lang.String-java.lang.Object-">setData</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/manager/trigger/SpongeConfigurationFileIO.html" title="interface in io.github.wysohn.triggerreactor.sponge.manager.trigger">SpongeConfigurationFileIO</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>file</code> - file to write data</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
-</dl>
-</li>
-</ul>
 <a name="openGUI-org.spongepowered.api.entity.living.player.Player-java.lang.String-">
 <!--   -->
 </a>
@@ -434,23 +351,8 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/
                              <a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/IInventory.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">IInventory</a>&nbsp;inventory)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#fillInventory-io.github.wysohn.triggerreactor.core.manager.trigger.inventory.InventoryTrigger-int-io.github.wysohn.triggerreactor.core.bridge.IInventory-">fillInventory</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.inventory">AbstractInventoryTriggerManager</a></code></dd>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#fillInventory-io.github.wysohn.triggerreactor.core.manager.trigger.inventory.InventoryTrigger-int-io.github.wysohn.triggerreactor.core.bridge.IInventory-">fillInventory</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.inventory">AbstractInventoryTriggerManager</a>&lt;org.spongepowered.api.item.inventory.ItemStack&gt;</code></dd>
 <dd><code>size</code> - mutiple of 9; must be less than or equalt to 54 (exclusive)</dd>
-</dl>
-</li>
-</ul>
-<a name="deleteInfo-io.github.wysohn.triggerreactor.core.manager.trigger.inventory.InventoryTrigger-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>deleteInfo</h4>
-<pre>protected&nbsp;void&nbsp;deleteInfo(<a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/InventoryTrigger.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.inventory">InventoryTrigger</a>&nbsp;trigger)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#deleteInfo-T-">AbstractTriggerManager</a></code></span></div>
-<div class="block">Default behavior is delete one file associated with the trigger. Override this method to change this behavior.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#deleteInfo-io.github.wysohn.triggerreactor.core.manager.trigger.inventory.InventoryTrigger-">deleteInfo</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.inventory">AbstractInventoryTriggerManager</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -466,7 +368,7 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/sponge/
 <div class="block">Create actual inventory.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#createInventory-int-java.lang.String-">createInventory</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.inventory">AbstractInventoryTriggerManager</a></code></dd>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html#createInventory-int-java.lang.String-">createInventory</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/inventory/AbstractInventoryTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.inventory">AbstractInventoryTriggerManager</a>&lt;org.spongepowered.api.item.inventory.ItemStack&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>size</code> - size of inventory. Must be multiple of 9.</dd>
 <dd><code>name</code> - name of the inventory. This is the raw name, so the
