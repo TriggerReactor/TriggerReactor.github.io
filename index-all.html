@@ -816,7 +816,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/CommandTriggerManager.html" title="class in io.github.wysohn.triggerreactor.bukkit.manager.trigger"><span class="typeNameLink">CommandTriggerManager</span></a> - Class in <a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/package-summary.html">io.github.wysohn.triggerreactor.bukkit.manager.trigger</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/CommandTriggerManager.html#CommandTriggerManager-io.github.wysohn.triggerreactor.core.main.TriggerReactorCore-">CommandTriggerManager(TriggerReactorCore)</a></span> - Constructor for class io.github.wysohn.triggerreactor.bukkit.manager.trigger.<a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/CommandTriggerManager.html" title="class in io.github.wysohn.triggerreactor.bukkit.manager.trigger">CommandTriggerManager</a></dt>
+<dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/CommandTriggerManager.html#CommandTriggerManager-io.github.wysohn.triggerreactor.core.main.TriggerReactorCore-io.github.wysohn.triggerreactor.bukkit.manager.trigger.ICommandMapHandler-">CommandTriggerManager(TriggerReactorCore, ICommandMapHandler)</a></span> - Constructor for class io.github.wysohn.triggerreactor.bukkit.manager.trigger.<a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/CommandTriggerManager.html" title="class in io.github.wysohn.triggerreactor.bukkit.manager.trigger">CommandTriggerManager</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="io/github/wysohn/triggerreactor/sponge/manager/trigger/CommandTriggerManager.html" title="class in io.github.wysohn.triggerreactor.sponge.manager.trigger"><span class="typeNameLink">CommandTriggerManager</span></a> - Class in <a href="io/github/wysohn/triggerreactor/sponge/manager/trigger/package-summary.html">io.github.wysohn.triggerreactor.sponge.manager.trigger</a></dt>
 <dd>&nbsp;</dd>
@@ -2141,6 +2141,10 @@
 <dd>
 <div class="block">Returns the element type of this collection type.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/bukkit/main/TriggerReactor.html#getCommandMap-io.github.wysohn.triggerreactor.core.main.TriggerReactorCore-">getCommandMap(TriggerReactorCore)</a></span> - Method in class io.github.wysohn.triggerreactor.bukkit.main.<a href="io/github/wysohn/triggerreactor/bukkit/main/TriggerReactor.html" title="class in io.github.wysohn.triggerreactor.bukkit.main">TriggerReactor</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/ICommandMapHandler.html#getCommandMap-io.github.wysohn.triggerreactor.core.main.TriggerReactorCore-">getCommandMap(TriggerReactorCore)</a></span> - Method in interface io.github.wysohn.triggerreactor.bukkit.manager.trigger.<a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/ICommandMapHandler.html" title="interface in io.github.wysohn.triggerreactor.bukkit.manager.trigger">ICommandMapHandler</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/sponge/tools/DelegatedPlayer.html#getCommandSource--">getCommandSource()</a></span> - Method in class io.github.wysohn.triggerreactor.sponge.tools.<a href="io/github/wysohn/triggerreactor/sponge/tools/DelegatedPlayer.html" title="class in io.github.wysohn.triggerreactor.sponge.tools">DelegatedPlayer</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/sponge/tools/TemporarilyPrivilegedPlayer.html#getCommandSource--">getCommandSource()</a></span> - Method in class io.github.wysohn.triggerreactor.sponge.tools.<a href="io/github/wysohn/triggerreactor/sponge/tools/TemporarilyPrivilegedPlayer.html" title="class in io.github.wysohn.triggerreactor.sponge.tools">TemporarilyPrivilegedPlayer</a></dt>
@@ -3337,6 +3341,8 @@
 </a>
 <h2 class="title">I</h2>
 <dl>
+<dt><a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/ICommandMapHandler.html" title="interface in io.github.wysohn.triggerreactor.bukkit.manager.trigger"><span class="typeNameLink">ICommandMapHandler</span></a> - Interface in <a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/package-summary.html">io.github.wysohn.triggerreactor.bukkit.manager.trigger</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="io/github/wysohn/triggerreactor/core/bridge/ICommandSender.html" title="interface in io.github.wysohn.triggerreactor.core.bridge"><span class="typeNameLink">ICommandSender</span></a> - Interface in <a href="io/github/wysohn/triggerreactor/core/bridge/package-summary.html">io.github.wysohn.triggerreactor.core.bridge</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config"><span class="typeNameLink">IConfigSource</span></a> - Interface in <a href="io/github/wysohn/triggerreactor/core/config/package-summary.html">io.github.wysohn.triggerreactor.core.config</a></dt>
@@ -6713,7 +6719,11 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/core/script/interpreter/SynchronizableTask.html#SynchronizableTask--">SynchronizableTask()</a></span> - Constructor for class io.github.wysohn.triggerreactor.core.script.interpreter.<a href="io/github/wysohn/triggerreactor/core/script/interpreter/SynchronizableTask.html" title="class in io.github.wysohn.triggerreactor.core.script.interpreter">SynchronizableTask</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/bukkit/main/TriggerReactor.html#synchronizeCommandMap--">synchronizeCommandMap()</a></span> - Method in class io.github.wysohn.triggerreactor.bukkit.main.<a href="io/github/wysohn/triggerreactor/bukkit/main/TriggerReactor.html" title="class in io.github.wysohn.triggerreactor.bukkit.main">TriggerReactor</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/CommandTriggerManager.html#synchronizeCommandMap--">synchronizeCommandMap()</a></span> - Method in class io.github.wysohn.triggerreactor.bukkit.manager.trigger.<a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/CommandTriggerManager.html" title="class in io.github.wysohn.triggerreactor.bukkit.manager.trigger">CommandTriggerManager</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/ICommandMapHandler.html#synchronizeCommandMap--">synchronizeCommandMap()</a></span> - Method in interface io.github.wysohn.triggerreactor.bukkit.manager.trigger.<a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/ICommandMapHandler.html" title="interface in io.github.wysohn.triggerreactor.bukkit.manager.trigger">ICommandMapHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html#synchronizeCommandMap--">synchronizeCommandMap()</a></span> - Method in class io.github.wysohn.triggerreactor.core.manager.trigger.command.<a href="io/github/wysohn/triggerreactor/core/manager/trigger/command/AbstractCommandTriggerManager.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.command">AbstractCommandTriggerManager</a></dt>
 <dd>&nbsp;</dd>
