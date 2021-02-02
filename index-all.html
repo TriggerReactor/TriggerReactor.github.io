@@ -1229,6 +1229,8 @@
 </dd>
 <dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/bukkit/main/serialize/BukkitConfigurationSerializer.html#deserialize-io.github.wysohn.gsoncopy.JsonElement-java.lang.reflect.Type-io.github.wysohn.gsoncopy.JsonDeserializationContext-">deserialize(JsonElement, Type, JsonDeserializationContext)</a></span> - Method in class io.github.wysohn.triggerreactor.bukkit.main.serialize.<a href="io/github/wysohn/triggerreactor/bukkit/main/serialize/BukkitConfigurationSerializer.html" title="class in io.github.wysohn.triggerreactor.bukkit.main.serialize">BukkitConfigurationSerializer</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/bukkit/tools/SerializableLocation.html#deserialize-java.util.Map-">deserialize(Map&lt;String, Object&gt;)</a></span> - Static method in class io.github.wysohn.triggerreactor.bukkit.tools.<a href="io/github/wysohn/triggerreactor/bukkit/tools/SerializableLocation.html" title="class in io.github.wysohn.triggerreactor.bukkit.tools">SerializableLocation</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/core/config/serialize/CustomSerializer.html#deserialize-io.github.wysohn.gsoncopy.JsonElement-io.github.wysohn.gsoncopy.JsonDeserializationContext-">deserialize(JsonElement, JsonDeserializationContext)</a></span> - Method in class io.github.wysohn.triggerreactor.core.config.serialize.<a href="io/github/wysohn/triggerreactor/core/config/serialize/CustomSerializer.html" title="class in io.github.wysohn.triggerreactor.core.config.serialize">CustomSerializer</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/core/config/serialize/CustomSerializer.html#deserialize-io.github.wysohn.gsoncopy.JsonElement-java.lang.reflect.Type-io.github.wysohn.gsoncopy.JsonDeserializationContext-">deserialize(JsonElement, Type, JsonDeserializationContext)</a></span> - Method in class io.github.wysohn.triggerreactor.core.config.serialize.<a href="io/github/wysohn/triggerreactor/core/config/serialize/CustomSerializer.html" title="class in io.github.wysohn.triggerreactor.core.config.serialize">CustomSerializer</a></dt>
@@ -5994,6 +5996,10 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/core/config/serialize/Serializer.html#SER_VALUE">SER_VALUE</a></span> - Static variable in interface io.github.wysohn.triggerreactor.core.config.serialize.<a href="io/github/wysohn/triggerreactor/core/config/serialize/Serializer.html" title="interface in io.github.wysohn.triggerreactor.core.config.serialize">Serializer</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="io/github/wysohn/triggerreactor/bukkit/tools/SerializableLocation.html" title="class in io.github.wysohn.triggerreactor.bukkit.tools"><span class="typeNameLink">SerializableLocation</span></a> - Class in <a href="io/github/wysohn/triggerreactor/bukkit/tools/package-summary.html">io.github.wysohn.triggerreactor.bukkit.tools</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/bukkit/tools/SerializableLocation.html#SerializableLocation-org.bukkit.Location-">SerializableLocation(Location)</a></span> - Constructor for class io.github.wysohn.triggerreactor.bukkit.tools.<a href="io/github/wysohn/triggerreactor/bukkit/tools/SerializableLocation.html" title="class in io.github.wysohn.triggerreactor.bukkit.tools">SerializableLocation</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/github/wysohn/gsoncopy/JsonSerializationContext.html#serialize-java.lang.Object-">serialize(Object)</a></span> - Method in interface io.github.wysohn.gsoncopy.<a href="io/github/wysohn/gsoncopy/JsonSerializationContext.html" title="interface in io.github.wysohn.gsoncopy">JsonSerializationContext</a></dt>
 <dd>
 <div class="block">Invokes default serialization on the specified object.</div>
@@ -6013,6 +6019,8 @@
 <div class="block">Serialize this <code>value</code> using this serialization policy.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/bukkit/main/serialize/BukkitConfigurationSerializer.html#serialize-org.bukkit.configuration.serialization.ConfigurationSerializable-java.lang.reflect.Type-io.github.wysohn.gsoncopy.JsonSerializationContext-">serialize(ConfigurationSerializable, Type, JsonSerializationContext)</a></span> - Method in class io.github.wysohn.triggerreactor.bukkit.main.serialize.<a href="io/github/wysohn/triggerreactor/bukkit/main/serialize/BukkitConfigurationSerializer.html" title="class in io.github.wysohn.triggerreactor.bukkit.main.serialize">BukkitConfigurationSerializer</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/bukkit/tools/SerializableLocation.html#serialize--">serialize()</a></span> - Method in class io.github.wysohn.triggerreactor.bukkit.tools.<a href="io/github/wysohn/triggerreactor/bukkit/tools/SerializableLocation.html" title="class in io.github.wysohn.triggerreactor.bukkit.tools">SerializableLocation</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/core/config/serialize/CustomSerializer.html#serialize-T-io.github.wysohn.gsoncopy.JsonSerializationContext-">serialize(T, JsonSerializationContext)</a></span> - Method in class io.github.wysohn.triggerreactor.core.config.serialize.<a href="io/github/wysohn/triggerreactor/core/config/serialize/CustomSerializer.html" title="class in io.github.wysohn.triggerreactor.core.config.serialize">CustomSerializer</a></dt>
 <dd>&nbsp;</dd>
@@ -6034,6 +6042,30 @@
 <dd>
 <div class="block">An annotation that indicates this member should be serialized to JSON with
  the provided name value as its field name.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/AbstractCommonFunctions.html#serializeLocation-org.bukkit.World-double-double-double-">serializeLocation(World, double, double, double)</a></span> - Method in class io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.<a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/AbstractCommonFunctions.html" title="class in io.github.wysohn.triggerreactor.bukkit.manager.trigger.share">AbstractCommonFunctions</a></dt>
+<dd>
+<div class="block">Create a new SerializableLocation, which implements ConfigurationSerializable</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/AbstractCommonFunctions.html#serializeLocation-org.bukkit.World-double-double-double-double-double-">serializeLocation(World, double, double, double, double, double)</a></span> - Method in class io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.<a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/AbstractCommonFunctions.html" title="class in io.github.wysohn.triggerreactor.bukkit.manager.trigger.share">AbstractCommonFunctions</a></dt>
+<dd>
+<div class="block">Create a new SerializableLocation, which implements ConfigurationSerializable</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/AbstractCommonFunctions.html#serializeLocation-org.bukkit.Location-">serializeLocation(Location)</a></span> - Method in class io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.<a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/AbstractCommonFunctions.html" title="class in io.github.wysohn.triggerreactor.bukkit.manager.trigger.share">AbstractCommonFunctions</a></dt>
+<dd>
+<div class="block">Create a new SerializableLocation, which implements ConfigurationSerializable</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/CommonFunctions.html#serializeLocation-org.bukkit.World-double-double-double-">serializeLocation(World, double, double, double)</a></span> - Method in class io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.<a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/CommonFunctions.html" title="class in io.github.wysohn.triggerreactor.bukkit.manager.trigger.share">CommonFunctions</a></dt>
+<dd>
+<div class="block">Create a new SerializableLocation, which implements ConfigurationSerializable</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/CommonFunctions.html#serializeLocation-org.bukkit.World-double-double-double-double-double-">serializeLocation(World, double, double, double, double, double)</a></span> - Method in class io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.<a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/CommonFunctions.html" title="class in io.github.wysohn.triggerreactor.bukkit.manager.trigger.share">CommonFunctions</a></dt>
+<dd>
+<div class="block">Create a new SerializableLocation, which implements ConfigurationSerializable</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/CommonFunctions.html#serializeLocation-org.bukkit.Location-">serializeLocation(Location)</a></span> - Method in class io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.<a href="io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/CommonFunctions.html" title="class in io.github.wysohn.triggerreactor.bukkit.manager.trigger.share">CommonFunctions</a></dt>
+<dd>
+<div class="block">Create a new SerializableLocation, which implements ConfigurationSerializable</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/github/wysohn/gsoncopy/Gson.html#serializeNulls--">serializeNulls()</a></span> - Method in class io.github.wysohn.gsoncopy.<a href="io/github/wysohn/gsoncopy/Gson.html" title="class in io.github.wysohn.gsoncopy">Gson</a></dt>
 <dd>&nbsp;</dd>

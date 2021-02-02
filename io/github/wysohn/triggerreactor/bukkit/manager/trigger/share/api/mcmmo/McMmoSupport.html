@@ -18,6 +18,12 @@
     catch(err) {
     }
 //-->
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -68,15 +74,15 @@
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
+<li><a href="#fields.inherited.from.class.io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.APISupport">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -93,7 +99,17 @@
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/share/api/AbstractAPISupport.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.share.api">io.github.wysohn.triggerreactor.core.manager.trigger.share.api.AbstractAPISupport</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/api/APISupport.html" title="class in io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api">io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.APISupport</a></li>
+<li>
+<ul class="inheritance">
 <li>io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.mcmmo.McMmoSupport</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -102,30 +118,338 @@
 <li class="blockList">
 <hr>
 <br>
-<pre>public static class <span class="typeNameLabel">McMmoSupport</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../../../../serialized-form.html#io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.mcmmo.McMmoSupport">Serialized Form</a></dd>
-</dl>
+<pre>public class <span class="typeNameLabel">McMmoSupport</span>
+extends <a href="../../../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/api/APISupport.html" title="class in io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api">APISupport</a></pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.APISupport">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.<a href="../../../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/api/APISupport.html" title="class in io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api">APISupport</a></h3>
+<code><a href="../../../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/api/APISupport.html#target">target</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.io.github.wysohn.triggerreactor.core.manager.trigger.share.api.AbstractAPISupport">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;io.github.wysohn.triggerreactor.core.manager.trigger.share.api.<a href="../../../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/share/api/AbstractAPISupport.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.share.api">AbstractAPISupport</a></h3>
+<code><a href="../../../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/share/api/AbstractAPISupport.html#plugin">plugin</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/api/mcmmo/McMmoSupport.html#McMmoSupport-io.github.wysohn.triggerreactor.core.main.TriggerReactorCore-">McMmoSupport</a></span>(<a href="../../../../../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html" title="class in io.github.wysohn.triggerreactor.core.main">TriggerReactorCore</a>&nbsp;plugin)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/api/mcmmo/McMmoSupport.html#addLevel-org.bukkit.entity.Player-java.lang.String-int-">addLevel</a></span>(org.bukkit.entity.Player&nbsp;player,
+        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;skillType,
+        int&nbsp;levels)</code>
+<div class="block">add 'levels' to target player's 'skillType'</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/api/mcmmo/McMmoSupport.html#addXp-org.bukkit.entity.Player-java.lang.String-int-">addXp</a></span>(org.bukkit.entity.Player&nbsp;player,
+     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;skillType,
+     int&nbsp;xp)</code>
+<div class="block">add 'xp' to the target player's 'skillType'</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/api/mcmmo/McMmoSupport.html#cooldown-org.bukkit.entity.Player-java.lang.String-">cooldown</a></span>(org.bukkit.entity.Player&nbsp;player,
+        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;abilityType)</code>
+<div class="block">get cooltime of player's 'abilityType'</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/api/mcmmo/McMmoSupport.html#level-org.bukkit.entity.Player-java.lang.String-">level</a></span>(org.bukkit.entity.Player&nbsp;player,
+     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;skillType)</code>
+<div class="block">get current level of player's 'skillType'</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/api/mcmmo/McMmoSupport.html#player-java.lang.String-">player</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
+<div class="block">get MCMMOPlayer object directly.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/api/mcmmo/McMmoSupport.html#removeXp-org.bukkit.entity.Player-java.lang.String-int-">removeXp</a></span>(org.bukkit.entity.Player&nbsp;player,
+        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;skillType,
+        int&nbsp;xp)</code>
+<div class="block">remove 'xp' from target player's 'skillType'</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/api/mcmmo/McMmoSupport.html#setLevel-org.bukkit.entity.Player-java.lang.String-int-">setLevel</a></span>(org.bukkit.entity.Player&nbsp;player,
+        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;skillType,
+        int&nbsp;level)</code>
+<div class="block">set level of target player's 'skillType' to 'level'</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/api/mcmmo/McMmoSupport.html#xp-org.bukkit.entity.Player-java.lang.String-">xp</a></span>(org.bukkit.entity.Player&nbsp;player,
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;skillType)</code>
+<div class="block">get current xp of player's 'skillType'</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/api/mcmmo/McMmoSupport.html#xpRemain-org.bukkit.entity.Player-java.lang.String-">xpRemain</a></span>(org.bukkit.entity.Player&nbsp;player,
+        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;skillType)</code>
+<div class="block">get xp left until level up of 'skillType' for player.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.APISupport">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.<a href="../../../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/api/APISupport.html" title="class in io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api">APISupport</a></h3>
+<code><a href="../../../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/api/APISupport.html#addSharedVars-java.lang.String-java.lang.Class-">addSharedVars</a>, <a href="../../../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/api/APISupport.html#getSharedVars--">getSharedVars</a>, <a href="../../../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/api/APISupport.html#init--">init</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.io.github.wysohn.triggerreactor.core.manager.trigger.share.api.AbstractAPISupport">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.wysohn.triggerreactor.core.manager.trigger.share.api.<a href="../../../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/share/api/AbstractAPISupport.html" title="class in io.github.wysohn.triggerreactor.core.manager.trigger.share.api">AbstractAPISupport</a></h3>
+<code><a href="../../../../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/share/api/AbstractAPISupport.html#addSharedVar-java.util.Map-java.lang.String-java.lang.Class-">addSharedVar</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="McMmoSupport-io.github.wysohn.triggerreactor.core.main.TriggerReactorCore-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>McMmoSupport</h4>
+<pre>public&nbsp;McMmoSupport(<a href="../../../../../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html" title="class in io.github.wysohn.triggerreactor.core.main">TriggerReactorCore</a>&nbsp;plugin)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="player-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>player</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;player(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+<div class="block">get MCMMOPlayer object directly.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
+</li>
+</ul>
+<a name="level-org.bukkit.entity.Player-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>level</h4>
+<pre>public&nbsp;int&nbsp;level(org.bukkit.entity.Player&nbsp;player,
+                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;skillType)</pre>
+<div class="block">get current level of player's 'skillType'</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>player</code> - </dd>
+<dd><code>skillType</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
+</li>
+</ul>
+<a name="setLevel-org.bukkit.entity.Player-java.lang.String-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLevel</h4>
+<pre>public&nbsp;void&nbsp;setLevel(org.bukkit.entity.Player&nbsp;player,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;skillType,
+                     int&nbsp;level)</pre>
+<div class="block">set level of target player's 'skillType' to 'level'</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>player</code> - </dd>
+<dd><code>skillType</code> - </dd>
+<dd><code>level</code> - </dd>
+</dl>
+</li>
+</ul>
+<a name="addLevel-org.bukkit.entity.Player-java.lang.String-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addLevel</h4>
+<pre>public&nbsp;void&nbsp;addLevel(org.bukkit.entity.Player&nbsp;player,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;skillType,
+                     int&nbsp;levels)</pre>
+<div class="block">add 'levels' to target player's 'skillType'</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>player</code> - </dd>
+<dd><code>skillType</code> - </dd>
+<dd><code>levels</code> - </dd>
+</dl>
+</li>
+</ul>
+<a name="xp-org.bukkit.entity.Player-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>xp</h4>
+<pre>public&nbsp;double&nbsp;xp(org.bukkit.entity.Player&nbsp;player,
+                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;skillType)</pre>
+<div class="block">get current xp of player's 'skillType'</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>player</code> - </dd>
+<dd><code>skillType</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
+</li>
+</ul>
+<a name="addXp-org.bukkit.entity.Player-java.lang.String-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addXp</h4>
+<pre>public&nbsp;void&nbsp;addXp(org.bukkit.entity.Player&nbsp;player,
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;skillType,
+                  int&nbsp;xp)</pre>
+<div class="block">add 'xp' to the target player's 'skillType'</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>player</code> - </dd>
+<dd><code>skillType</code> - </dd>
+<dd><code>xp</code> - </dd>
+</dl>
+</li>
+</ul>
+<a name="removeXp-org.bukkit.entity.Player-java.lang.String-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeXp</h4>
+<pre>public&nbsp;void&nbsp;removeXp(org.bukkit.entity.Player&nbsp;player,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;skillType,
+                     int&nbsp;xp)</pre>
+<div class="block">remove 'xp' from target player's 'skillType'</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>player</code> - </dd>
+<dd><code>skillType</code> - </dd>
+<dd><code>xp</code> - </dd>
+</dl>
+</li>
+</ul>
+<a name="xpRemain-org.bukkit.entity.Player-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>xpRemain</h4>
+<pre>public&nbsp;double&nbsp;xpRemain(org.bukkit.entity.Player&nbsp;player,
+                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;skillType)</pre>
+<div class="block">get xp left until level up of 'skillType' for player.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>player</code> - </dd>
+<dd><code>skillType</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
+</li>
+</ul>
+<a name="cooldown-org.bukkit.entity.Player-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>cooldown</h4>
+<pre>public&nbsp;int&nbsp;cooldown(org.bukkit.entity.Player&nbsp;player,
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;abilityType)</pre>
+<div class="block">get cooltime of player's 'abilityType'</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>player</code> - </dd>
+<dd><code>abilityType</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
+</li>
 </ul>
 </li>
 </ul>
@@ -180,15 +504,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
+<li><a href="#fields.inherited.from.class.io.github.wysohn.triggerreactor.bukkit.manager.trigger.share.api.APISupport">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">

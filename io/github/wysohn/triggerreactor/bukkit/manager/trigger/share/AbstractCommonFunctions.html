@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":42,"i6":42,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":6,"i15":10,"i16":10,"i17":10,"i18":6,"i19":6,"i20":38,"i21":38,"i22":6,"i23":6,"i24":10,"i25":10,"i26":10,"i27":10,"i28":6,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":38,"i36":38,"i37":10,"i38":6,"i39":6};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":42,"i6":42,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":6,"i15":10,"i16":10,"i17":10,"i18":6,"i19":6,"i20":38,"i21":38,"i22":6,"i23":6,"i24":10,"i25":10,"i26":10,"i27":10,"i28":6,"i29":10,"i30":10,"i31":10,"i32":10,"i33":6,"i34":6,"i35":6,"i36":10,"i37":10,"i38":38,"i39":38,"i40":10,"i41":6,"i42":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -421,13 +421,39 @@ implements <a href="../../../../../../../../io/github/wysohn/triggerreactor/core
 </td>
 </tr>
 <tr id="i33" class="rowColor">
+<td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/AbstractCommonFunctions.html#serializeLocation-org.bukkit.Location-">serializeLocation</a></span>(org.bukkit.Location&nbsp;loc)</code>
+<div class="block">Create a new SerializableLocation, which implements ConfigurationSerializable</div>
+</td>
+</tr>
+<tr id="i34" class="altColor">
+<td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/AbstractCommonFunctions.html#serializeLocation-org.bukkit.World-double-double-double-">serializeLocation</a></span>(org.bukkit.World&nbsp;world,
+                 double&nbsp;x,
+                 double&nbsp;y,
+                 double&nbsp;z)</code>
+<div class="block">Create a new SerializableLocation, which implements ConfigurationSerializable</div>
+</td>
+</tr>
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/AbstractCommonFunctions.html#serializeLocation-org.bukkit.World-double-double-double-double-double-">serializeLocation</a></span>(org.bukkit.World&nbsp;world,
+                 double&nbsp;x,
+                 double&nbsp;y,
+                 double&nbsp;z,
+                 double&nbsp;yaw,
+                 double&nbsp;pitch)</code>
+<div class="block">Create a new SerializableLocation, which implements ConfigurationSerializable</div>
+</td>
+</tr>
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/AbstractCommonFunctions.html#setItemTitle-org.bukkit.inventory.ItemStack-java.lang.String-">setItemTitle</a></span>(org.bukkit.inventory.ItemStack&nbsp;IS,
             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title)</code>
 <div class="block">Set title of the specified ItemStack</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/AbstractCommonFunctions.html#setLore-org.bukkit.inventory.ItemStack-int-java.lang.String-">setLore</a></span>(org.bukkit.inventory.ItemStack&nbsp;IS,
        int&nbsp;index,
@@ -435,7 +461,7 @@ implements <a href="../../../../../../../../io/github/wysohn/triggerreactor/core
 <div class="block">Replace a lore at 'index' for the specified ItemStack.</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>abstract boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/AbstractCommonFunctions.html#takeItem-org.bukkit.entity.Player-int-int-">takeItem</a></span>(org.bukkit.entity.Player&nbsp;player,
         int&nbsp;id,
@@ -445,7 +471,7 @@ implements <a href="../../../../../../../../io/github/wysohn/triggerreactor/core
 </div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>abstract boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/AbstractCommonFunctions.html#takeItem-org.bukkit.entity.Player-int-int-int-">takeItem</a></span>(org.bukkit.entity.Player&nbsp;player,
         int&nbsp;id,
@@ -456,7 +482,7 @@ implements <a href="../../../../../../../../io/github/wysohn/triggerreactor/core
 </div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/AbstractCommonFunctions.html#takeItem-org.bukkit.entity.Player-org.bukkit.inventory.ItemStack-int-">takeItem</a></span>(org.bukkit.entity.Player&nbsp;player,
         org.bukkit.inventory.ItemStack&nbsp;IS,
@@ -464,7 +490,7 @@ implements <a href="../../../../../../../../io/github/wysohn/triggerreactor/core
 <div class="block">take ItemStack from player.</div>
 </td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>abstract boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/AbstractCommonFunctions.html#takeItem-org.bukkit.entity.Player-java.lang.String-int-">takeItem</a></span>(org.bukkit.entity.Player&nbsp;player,
         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
@@ -472,7 +498,7 @@ implements <a href="../../../../../../../../io/github/wysohn/triggerreactor/core
 <div class="block">take item from player.</div>
 </td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>abstract boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/share/AbstractCommonFunctions.html#takeItem-org.bukkit.entity.Player-java.lang.String-int-int-">takeItem</a></span>(org.bukkit.entity.Player&nbsp;player,
         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
@@ -1351,7 +1377,7 @@ public abstract&nbsp;org.bukkit.inventory.ItemStack&nbsp;item(int&nbsp;type,
 <a name="headForValue-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>headForValue</h4>
 <pre>public abstract&nbsp;org.bukkit.inventory.ItemStack&nbsp;headForValue(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;textureValue)</pre>
@@ -1372,6 +1398,79 @@ public abstract&nbsp;org.bukkit.inventory.ItemStack&nbsp;item(int&nbsp;type,
 <dd><code>textureValue</code> - base64 encoded texture value</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the ItemStack head</dd>
+</dl>
+</li>
+</ul>
+<a name="serializeLocation-org.bukkit.World-double-double-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>serializeLocation</h4>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;serializeLocation(org.bukkit.World&nbsp;world,
+                                         double&nbsp;x,
+                                         double&nbsp;y,
+                                         double&nbsp;z)</pre>
+<div class="block">Create a new SerializableLocation, which implements ConfigurationSerializable
+ <p>
+ Example) /trg run serialized = serializeLocation("wildw", 2, 13, 44)
+ </p></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>world</code> - The world instance in which this location resides</dd>
+<dd><code>x</code> - The x-coordinate of this location</dd>
+<dd><code>y</code> - The y-coordinate of this location</dd>
+<dd><code>z</code> - The z-coordinate of this location</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The SerializableLocation value</dd>
+</dl>
+</li>
+</ul>
+<a name="serializeLocation-org.bukkit.World-double-double-double-double-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>serializeLocation</h4>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;serializeLocation(org.bukkit.World&nbsp;world,
+                                         double&nbsp;x,
+                                         double&nbsp;y,
+                                         double&nbsp;z,
+                                         double&nbsp;yaw,
+                                         double&nbsp;pitch)</pre>
+<div class="block">Create a new SerializableLocation, which implements ConfigurationSerializable
+ <p>
+ Example) /trg run serialized = serializeLocation("wildw", 2, 13, 44.6, 13)
+ </p></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>world</code> - The world instance in which this location resides</dd>
+<dd><code>x</code> - The x-coordinate of this location</dd>
+<dd><code>y</code> - The y-coordinate of this location</dd>
+<dd><code>z</code> - The z-coordinate of this location</dd>
+<dd><code>yaw</code> - The absolute rotation on the x-plane, in degrees</dd>
+<dd><code>pitch</code> - The absolute rotation on the y-plane, in degrees</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The SerializableLocation value</dd>
+</dl>
+</li>
+</ul>
+<a name="serializeLocation-org.bukkit.Location-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>serializeLocation</h4>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;serializeLocation(org.bukkit.Location&nbsp;loc)</pre>
+<div class="block">Create a new SerializableLocation, which implements ConfigurationSerializable
+ <p>
+ Example) /trg run serialized = serializeLocation("wildw", 2, 13, 44.6, 13)
+ </p></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>loc</code> - The Location value</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The SerializableLocation value</dd>
 </dl>
 </li>
 </ul>
