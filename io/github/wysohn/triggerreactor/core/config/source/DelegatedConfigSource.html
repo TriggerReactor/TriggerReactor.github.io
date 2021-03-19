@@ -108,13 +108,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a></dd>
+<dd><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config.source">IConfigSource</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">DelegatedConfigSource</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a></pre>
+implements <a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config.source">IConfigSource</a></pre>
 </li>
 </ul>
 </div>
@@ -133,7 +133,7 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/core/co
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/DelegatedConfigSource.html#DelegatedConfigSource-io.github.wysohn.triggerreactor.core.config.IConfigSource-">DelegatedConfigSource</a></span>(<a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a>&nbsp;configSource)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/DelegatedConfigSource.html#DelegatedConfigSource-io.github.wysohn.triggerreactor.core.config.source.IConfigSource-">DelegatedConfigSource</a></span>(<a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config.source">IConfigSource</a>&nbsp;configSource)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -226,13 +226,13 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/core/co
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DelegatedConfigSource-io.github.wysohn.triggerreactor.core.config.IConfigSource-">
+<a name="DelegatedConfigSource-io.github.wysohn.triggerreactor.core.config.source.IConfigSource-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DelegatedConfigSource</h4>
-<pre>public&nbsp;DelegatedConfigSource(<a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a>&nbsp;configSource)</pre>
+<pre>public&nbsp;DelegatedConfigSource(<a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config.source">IConfigSource</a>&nbsp;configSource)</pre>
 </li>
 </ul>
 </li>
@@ -252,7 +252,7 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/core/co
 <pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;toPath(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html#toPath-java.lang.String-">toPath</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a></code></dd>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html#toPath-java.lang.String-">toPath</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config.source">IConfigSource</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -263,12 +263,12 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/core/co
 <li class="blockList">
 <h4>fileExists</h4>
 <pre>public&nbsp;boolean&nbsp;fileExists()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html#fileExists--">IConfigSource</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html#fileExists--">IConfigSource</a></code></span></div>
 <div class="block">Check if valid .json file exists. Here, 'valid' means it's a valid json file.
  For example, a valid json file must contain at least object ({}).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html#fileExists--">fileExists</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a></code></dd>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html#fileExists--">fileExists</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config.source">IConfigSource</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 </dl>
 </li>
@@ -283,7 +283,7 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/core/co
                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;asType)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html#get-java.lang.String-java.lang.Class-">get</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a></code></dd>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html#get-java.lang.String-java.lang.Class-">get</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config.source">IConfigSource</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -296,7 +296,7 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/core/co
 <pre>public&nbsp;&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;T&gt;&nbsp;get(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html#get-java.lang.String-">get</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a></code></dd>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html#get-java.lang.String-">get</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config.source">IConfigSource</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -310,7 +310,7 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/core/co
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html#put-java.lang.String-java.lang.Object-">put</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a></code></dd>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html#put-java.lang.String-java.lang.Object-">put</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config.source">IConfigSource</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -323,7 +323,7 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/core/co
 <pre>public&nbsp;boolean&nbsp;has(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html#has-java.lang.String-">has</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a></code></dd>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html#has-java.lang.String-">has</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config.source">IConfigSource</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -336,7 +336,7 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/core/co
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;keys()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html#keys--">keys</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a></code></dd>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html#keys--">keys</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config.source">IConfigSource</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -349,7 +349,7 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/core/co
 <pre>public&nbsp;boolean&nbsp;isSection(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html#isSection-java.lang.String-">isSection</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a></code></dd>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html#isSection-java.lang.String-">isSection</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config.source">IConfigSource</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -362,7 +362,7 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/core/co
 <pre>public&nbsp;void&nbsp;reload()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html#reload--">reload</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a></code></dd>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html#reload--">reload</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config.source">IConfigSource</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -375,7 +375,7 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/core/co
 <pre>public&nbsp;void&nbsp;saveAll()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html#saveAll--">saveAll</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a></code></dd>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html#saveAll--">saveAll</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config.source">IConfigSource</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -388,7 +388,7 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/core/co
 <pre>public&nbsp;void&nbsp;disable()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html#disable--">disable</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a></code></dd>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html#disable--">disable</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config.source">IConfigSource</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -399,11 +399,11 @@ implements <a href="../../../../../../../io/github/wysohn/triggerreactor/core/co
 <li class="blockList">
 <h4>delete</h4>
 <pre>public&nbsp;void&nbsp;delete()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html#delete--">IConfigSource</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html#delete--">IConfigSource</a></code></span></div>
 <div class="block">Delete the config file.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html#delete--">delete</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a></code></dd>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html#delete--">delete</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config.source">IConfigSource</a></code></dd>
 </dl>
 </li>
 </ul>

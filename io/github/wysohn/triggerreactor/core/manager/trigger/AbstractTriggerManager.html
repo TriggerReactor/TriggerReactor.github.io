@@ -161,7 +161,7 @@ extends <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manag
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function">BiFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/ConfigSourceFactory.html" title="class in io.github.wysohn.triggerreactor.core.config.source">ConfigSourceFactory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#configSourceFactory">configSourceFactory</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -197,12 +197,6 @@ extends <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manag
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#AbstractTriggerManager-io.github.wysohn.triggerreactor.core.main.TriggerReactorCore-java.io.File-io.github.wysohn.triggerreactor.core.manager.trigger.ITriggerLoader-">AbstractTriggerManager</a></span>(<a href="../../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html" title="class in io.github.wysohn.triggerreactor.core.main">TriggerReactorCore</a>&nbsp;plugin,
                       <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;folder,
                       <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ITriggerLoader.html" title="interface in io.github.wysohn.triggerreactor.core.manager.trigger">ITriggerLoader</a>&lt;<a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="type parameter in AbstractTriggerManager">T</a>&gt;&nbsp;loader)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html#AbstractTriggerManager-io.github.wysohn.triggerreactor.core.main.TriggerReactorCore-java.io.File-io.github.wysohn.triggerreactor.core.manager.trigger.ITriggerLoader-java.util.function.BiFunction-">AbstractTriggerManager</a></span>(<a href="../../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html" title="class in io.github.wysohn.triggerreactor.core.main">TriggerReactorCore</a>&nbsp;plugin,
-                      <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;folder,
-                      <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ITriggerLoader.html" title="interface in io.github.wysohn.triggerreactor.core.manager.trigger">ITriggerLoader</a>&lt;<a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="type parameter in AbstractTriggerManager">T</a>&gt;&nbsp;loader,
-                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function">BiFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a>&gt;&nbsp;configSourceFactory)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -332,7 +326,7 @@ extends <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manag
 <ul class="blockListLast">
 <li class="blockList">
 <h4>configSourceFactory</h4>
-<pre>protected final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function">BiFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a>&gt; configSourceFactory</pre>
+<pre>protected final&nbsp;<a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/source/ConfigSourceFactory.html" title="class in io.github.wysohn.triggerreactor.core.config.source">ConfigSourceFactory</a> configSourceFactory</pre>
 </li>
 </ul>
 </li>
@@ -346,24 +340,12 @@ extends <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manag
 <a name="AbstractTriggerManager-io.github.wysohn.triggerreactor.core.main.TriggerReactorCore-java.io.File-io.github.wysohn.triggerreactor.core.manager.trigger.ITriggerLoader-">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
-<h4>AbstractTriggerManager</h4>
-<pre>public&nbsp;AbstractTriggerManager(<a href="../../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html" title="class in io.github.wysohn.triggerreactor.core.main">TriggerReactorCore</a>&nbsp;plugin,
-                              <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;folder,
-                              <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ITriggerLoader.html" title="interface in io.github.wysohn.triggerreactor.core.manager.trigger">ITriggerLoader</a>&lt;<a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="type parameter in AbstractTriggerManager">T</a>&gt;&nbsp;loader)</pre>
-</li>
-</ul>
-<a name="AbstractTriggerManager-io.github.wysohn.triggerreactor.core.main.TriggerReactorCore-java.io.File-io.github.wysohn.triggerreactor.core.manager.trigger.ITriggerLoader-java.util.function.BiFunction-">
-<!--   -->
-</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AbstractTriggerManager</h4>
 <pre>public&nbsp;AbstractTriggerManager(<a href="../../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html" title="class in io.github.wysohn.triggerreactor.core.main">TriggerReactorCore</a>&nbsp;plugin,
                               <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;folder,
-                              <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ITriggerLoader.html" title="interface in io.github.wysohn.triggerreactor.core.manager.trigger">ITriggerLoader</a>&lt;<a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="type parameter in AbstractTriggerManager">T</a>&gt;&nbsp;loader,
-                              <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function">BiFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../../../io/github/wysohn/triggerreactor/core/config/IConfigSource.html" title="interface in io.github.wysohn.triggerreactor.core.config">IConfigSource</a>&gt;&nbsp;configSourceFactory)</pre>
+                              <a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/ITriggerLoader.html" title="interface in io.github.wysohn.triggerreactor.core.manager.trigger">ITriggerLoader</a>&lt;<a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/trigger/AbstractTriggerManager.html" title="type parameter in AbstractTriggerManager">T</a>&gt;&nbsp;loader)</pre>
 </li>
 </ul>
 </li>
