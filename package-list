@@ -30,6 +30,7 @@ io.github.wysohn.triggerreactor.core.bridge.event
 io.github.wysohn.triggerreactor.core.config
 io.github.wysohn.triggerreactor.core.config.serialize
 io.github.wysohn.triggerreactor.core.config.source
+io.github.wysohn.triggerreactor.core.config.validation
 io.github.wysohn.triggerreactor.core.main
 io.github.wysohn.triggerreactor.core.manager
 io.github.wysohn.triggerreactor.core.manager.location
