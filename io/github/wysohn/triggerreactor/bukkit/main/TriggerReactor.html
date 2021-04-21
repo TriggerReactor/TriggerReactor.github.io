@@ -18,6 +18,12 @@
     catch(err) {
     }
 //-->
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -67,16 +73,16 @@
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
+<li><a href="#nested.classes.inherited.from.class.io.github.wysohn.triggerreactor.bukkit.main.AbstractJavaPlugin">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.io.github.wysohn.triggerreactor.bukkit.main.AbstractJavaPlugin">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -93,39 +99,239 @@
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
+<li>org.bukkit.plugin.PluginBase</li>
+<li>
+<ul class="inheritance">
+<li>org.bukkit.plugin.java.JavaPlugin</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html" title="class in io.github.wysohn.triggerreactor.bukkit.main">io.github.wysohn.triggerreactor.bukkit.main.AbstractJavaPlugin</a></li>
+<li>
+<ul class="inheritance">
 <li>io.github.wysohn.triggerreactor.bukkit.main.TriggerReactor</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/manager/trigger/ICommandMapHandler.html" title="interface in io.github.wysohn.triggerreactor.bukkit.manager.trigger">ICommandMapHandler</a>, org.bukkit.command.CommandExecutor, org.bukkit.command.TabCompleter, org.bukkit.command.TabExecutor, org.bukkit.plugin.Plugin</dd>
+</dl>
 <hr>
 <br>
-<pre>public static class <span class="typeNameLabel">TriggerReactor</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../serialized-form.html#io.github.wysohn.triggerreactor.bukkit.main.TriggerReactor">Serialized Form</a></dd>
-</dl>
+<pre>public class <span class="typeNameLabel">TriggerReactor</span>
+extends <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html" title="class in io.github.wysohn.triggerreactor.bukkit.main">AbstractJavaPlugin</a></pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested.class.summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="nested.classes.inherited.from.class.io.github.wysohn.triggerreactor.bukkit.main.AbstractJavaPlugin">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from class&nbsp;io.github.wysohn.triggerreactor.bukkit.main.<a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html" title="class in io.github.wysohn.triggerreactor.bukkit.main">AbstractJavaPlugin</a></h3>
+<code><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.BungeeCordHelper.html" title="class in io.github.wysohn.triggerreactor.bukkit.main">AbstractJavaPlugin.BungeeCordHelper</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.MysqlSupport.html" title="class in io.github.wysohn.triggerreactor.bukkit.main">AbstractJavaPlugin.MysqlSupport</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.io.github.wysohn.triggerreactor.bukkit.main.AbstractJavaPlugin">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;io.github.wysohn.triggerreactor.bukkit.main.<a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html" title="class in io.github.wysohn.triggerreactor.bukkit.main">AbstractJavaPlugin</a></h3>
+<code><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#core">core</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/TriggerReactor.html#TriggerReactor--">TriggerReactor</a></span>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,org.bukkit.command.Command&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/TriggerReactor.html#getCommandMap-io.github.wysohn.triggerreactor.core.main.TriggerReactorCore-">getCommandMap</a></span>(<a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html" title="class in io.github.wysohn.triggerreactor.core.main">TriggerReactorCore</a>&nbsp;plugin)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../io/github/wysohn/triggerreactor/core/script/wrapper/SelfReference.html" title="interface in io.github.wysohn.triggerreactor.core.script.wrapper">SelfReference</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/TriggerReactor.html#getSelfReference--">getSelfReference</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/TriggerReactor.html#onEnable--">onEnable</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/TriggerReactor.html#registerAPIs--">registerAPIs</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/TriggerReactor.html#synchronizeCommandMap--">synchronizeCommandMap</a></span>()</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.io.github.wysohn.triggerreactor.bukkit.main.AbstractJavaPlugin">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.wysohn.triggerreactor.bukkit.main.<a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html" title="class in io.github.wysohn.triggerreactor.bukkit.main">AbstractJavaPlugin</a></h3>
+<code><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#addItemLore-io.github.wysohn.triggerreactor.core.bridge.IItemStack-java.lang.String-">addItemLore</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#callEvent-io.github.wysohn.triggerreactor.core.bridge.event.IEvent-">callEvent</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#callSyncMethod-java.util.concurrent.Callable-">callSyncMethod</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#createEmptyPlayerEvent-io.github.wysohn.triggerreactor.core.bridge.ICommandSender-">createEmptyPlayerEvent</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#createInterrupter-java.lang.Object-io.github.wysohn.triggerreactor.core.script.interpreter.Interpreter-java.util.Map-">createInterrupter</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#createInterrupterForInv-java.lang.Object-io.github.wysohn.triggerreactor.core.script.interpreter.Interpreter-java.util.Map-java.util.Map-">createInterrupterForInv</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#createPlayerCommandEvent-io.github.wysohn.triggerreactor.core.bridge.ICommandSender-java.lang.String-java.lang.String:A-">createPlayerCommandEvent</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#disablePlugin--">disablePlugin</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#extractPlayerFromContext-java.lang.Object-">extractPlayerFromContext</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#getBungeeHelper--">getBungeeHelper</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#getConsoleSender--">getConsoleSender</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#getCustomVarsForTrigger-java.lang.Object-">getCustomVarsForTrigger</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#getJarFile--">getJarFile</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#getMysqlHelper--">getMysqlHelper</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#getPlayer-java.lang.String-">getPlayer</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#isDebugging--">isDebugging</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#isServerThread--">isServerThread</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#onCommand-org.bukkit.command.CommandSender-org.bukkit.command.Command-java.lang.String-java.lang.String:A-">onCommand</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#onDisable--">onDisable</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#onTabComplete-org.bukkit.command.CommandSender-org.bukkit.command.Command-java.lang.String-java.lang.String:A-">onTabComplete</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#registerEvents-io.github.wysohn.triggerreactor.core.manager.Manager-">registerEvents</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#removeLore-io.github.wysohn.triggerreactor.core.bridge.IItemStack-int-">removeLore</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#runTask-java.lang.Runnable-">runTask</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#saveAsynchronously-io.github.wysohn.triggerreactor.core.manager.Manager-">saveAsynchronously</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#setItemTitle-io.github.wysohn.triggerreactor.core.bridge.IItemStack-java.lang.String-">setItemTitle</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#setLore-io.github.wysohn.triggerreactor.core.bridge.IItemStack-int-java.lang.String-">setLore</a>, <a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#showGlowStones-io.github.wysohn.triggerreactor.core.bridge.ICommandSender-java.util.Set-">showGlowStones</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.org.bukkit.plugin.java.JavaPlugin">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.bukkit.plugin.java.JavaPlugin</h3>
+<code>getClassLoader, getCommand, getConfig, getDataFolder, getDefaultWorldGenerator, getDescription, getFile, getLogger, getPlugin, getPluginLoader, getProvidingPlugin, getResource, getServer, getTextResource, isEnabled, isNaggable, onLoad, reloadConfig, saveConfig, saveDefaultConfig, saveResource, setEnabled, setNaggable, toString</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.org.bukkit.plugin.PluginBase">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.bukkit.plugin.PluginBase</h3>
+<code>equals, getName, hashCode</code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="TriggerReactor--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>TriggerReactor</h4>
+<pre>public&nbsp;TriggerReactor()</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="onEnable--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onEnable</h4>
+<pre>public&nbsp;void&nbsp;onEnable()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>onEnable</code>&nbsp;in interface&nbsp;<code>org.bukkit.plugin.Plugin</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#onEnable--">onEnable</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html" title="class in io.github.wysohn.triggerreactor.bukkit.main">AbstractJavaPlugin</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="registerAPIs--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerAPIs</h4>
+<pre>protected&nbsp;void&nbsp;registerAPIs()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#registerAPIs--">registerAPIs</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html" title="class in io.github.wysohn.triggerreactor.bukkit.main">AbstractJavaPlugin</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getSelfReference--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSelfReference</h4>
+<pre>public&nbsp;<a href="../../../../../../io/github/wysohn/triggerreactor/core/script/wrapper/SelfReference.html" title="interface in io.github.wysohn.triggerreactor.core.script.wrapper">SelfReference</a>&nbsp;getSelfReference()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html#getSelfReference--">getSelfReference</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../io/github/wysohn/triggerreactor/bukkit/main/AbstractJavaPlugin.html" title="class in io.github.wysohn.triggerreactor.bukkit.main">AbstractJavaPlugin</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getCommandMap-io.github.wysohn.triggerreactor.core.main.TriggerReactorCore-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCommandMap</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,org.bukkit.command.Command&gt;&nbsp;getCommandMap(<a href="../../../../../../io/github/wysohn/triggerreactor/core/main/TriggerReactorCore.html" title="class in io.github.wysohn.triggerreactor.core.main">TriggerReactorCore</a>&nbsp;plugin)</pre>
+</li>
+</ul>
+<a name="synchronizeCommandMap--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>synchronizeCommandMap</h4>
+<pre>public&nbsp;void&nbsp;synchronizeCommandMap()</pre>
+</li>
 </ul>
 </li>
 </ul>
@@ -179,16 +385,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
+<li><a href="#nested.classes.inherited.from.class.io.github.wysohn.triggerreactor.bukkit.main.AbstractJavaPlugin">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.io.github.wysohn.triggerreactor.bukkit.main.AbstractJavaPlugin">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">

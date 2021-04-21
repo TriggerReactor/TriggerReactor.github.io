@@ -18,6 +18,12 @@
     catch(err) {
     }
 //-->
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -69,14 +75,14 @@
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -93,39 +99,287 @@
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/bridge/entity/BukkitEntity.html" title="class in io.github.wysohn.triggerreactor.bukkit.bridge.entity">io.github.wysohn.triggerreactor.bukkit.bridge.entity.BukkitEntity</a></li>
+<li>
+<ul class="inheritance">
 <li>io.github.wysohn.triggerreactor.bukkit.bridge.entity.BukkitPlayer</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IEntity.html" title="interface in io.github.wysohn.triggerreactor.core.bridge.entity">IEntity</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html" title="interface in io.github.wysohn.triggerreactor.core.bridge.entity">IPlayer</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/ICommandSender.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">ICommandSender</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/IMinecraftObject.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">IMinecraftObject</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/script/wrapper/IScriptObject.html" title="interface in io.github.wysohn.triggerreactor.core.script.wrapper">IScriptObject</a></dd>
+</dl>
 <hr>
 <br>
-<pre>public static class <span class="typeNameLabel">BukkitPlayer</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../serialized-form.html#io.github.wysohn.triggerreactor.bukkit.bridge.entity.BukkitPlayer">Serialized Form</a></dd>
-</dl>
+<pre>public class <span class="typeNameLabel">BukkitPlayer</span>
+extends <a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/bridge/entity/BukkitEntity.html" title="class in io.github.wysohn.triggerreactor.bukkit.bridge.entity">BukkitEntity</a>
+implements <a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html" title="interface in io.github.wysohn.triggerreactor.core.bridge.entity">IPlayer</a></pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/bridge/entity/BukkitPlayer.html#BukkitPlayer-org.bukkit.entity.Player-">BukkitPlayer</a></span>(org.bukkit.entity.Player&nbsp;player)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/bridge/entity/BukkitPlayer.html#get--">get</a></span>()</code>
+<div class="block">upwrap this interface.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/location/SimpleChunkLocation.html" title="class in io.github.wysohn.triggerreactor.core.manager.location">SimpleChunkLocation</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/bridge/entity/BukkitPlayer.html#getChunk--">getChunk</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/IInventory.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">IInventory</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/bridge/entity/BukkitPlayer.html#getInventory--">getInventory</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/IItemStack.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">IItemStack</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/bridge/entity/BukkitPlayer.html#getItemInMainHand--">getItemInMainHand</a></span>()</code>
+<div class="block">Get item in this player's main hand.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/ILocation.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">ILocation</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/bridge/entity/BukkitPlayer.html#getLocation--">getLocation</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/bridge/entity/BukkitPlayer.html#hasPermission-java.lang.String-">hasPermission</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;permission)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/bridge/entity/BukkitPlayer.html#openInventory-io.github.wysohn.triggerreactor.core.bridge.IInventory-">openInventory</a></span>(<a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/IInventory.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">IInventory</a>&nbsp;inventory)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/bridge/entity/BukkitPlayer.html#sendMessage-java.lang.String-">sendMessage</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/bridge/entity/BukkitPlayer.html#setItemInMainHand-io.github.wysohn.triggerreactor.core.bridge.IItemStack-">setItemInMainHand</a></span>(<a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/IItemStack.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">IItemStack</a>&nbsp;iS)</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.io.github.wysohn.triggerreactor.bukkit.bridge.entity.BukkitEntity">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.wysohn.triggerreactor.bukkit.bridge.entity.<a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/bridge/entity/BukkitEntity.html" title="class in io.github.wysohn.triggerreactor.bukkit.bridge.entity">BukkitEntity</a></h3>
+<code><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/bridge/entity/BukkitEntity.html#getUniqueId--">getUniqueId</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.io.github.wysohn.triggerreactor.core.bridge.entity.IPlayer">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.wysohn.triggerreactor.core.bridge.entity.<a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html" title="interface in io.github.wysohn.triggerreactor.core.bridge.entity">IPlayer</a></h3>
+<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html#getUniqueId--">getUniqueId</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.io.github.wysohn.triggerreactor.core.bridge.ICommandSender">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.wysohn.triggerreactor.core.bridge.<a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/ICommandSender.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">ICommandSender</a></h3>
+<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/ICommandSender.html#equals-java.lang.Object-">equals</a>, <a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/ICommandSender.html#hashCode--">hashCode</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="BukkitPlayer-org.bukkit.entity.Player-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>BukkitPlayer</h4>
+<pre>public&nbsp;BukkitPlayer(org.bukkit.entity.Player&nbsp;player)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="get--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre>public&nbsp;&lt;T&gt;&nbsp;T&nbsp;get()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/script/wrapper/IScriptObject.html#get--">IScriptObject</a></code></span></div>
+<div class="block">upwrap this interface.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/script/wrapper/IScriptObject.html#get--">get</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/script/wrapper/IScriptObject.html" title="interface in io.github.wysohn.triggerreactor.core.script.wrapper">IScriptObject</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/bridge/entity/BukkitEntity.html#get--">get</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/bukkit/bridge/entity/BukkitEntity.html" title="class in io.github.wysohn.triggerreactor.bukkit.bridge.entity">BukkitEntity</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
+</li>
+</ul>
+<a name="sendMessage-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sendMessage</h4>
+<pre>public&nbsp;void&nbsp;sendMessage(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/ICommandSender.html#sendMessage-java.lang.String-">sendMessage</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/ICommandSender.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">ICommandSender</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="hasPermission-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hasPermission</h4>
+<pre>public&nbsp;boolean&nbsp;hasPermission(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;permission)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/ICommandSender.html#hasPermission-java.lang.String-">hasPermission</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/ICommandSender.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">ICommandSender</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getInventory--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInventory</h4>
+<pre>public&nbsp;<a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/IInventory.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">IInventory</a>&nbsp;getInventory()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html#getInventory--">getInventory</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html" title="interface in io.github.wysohn.triggerreactor.core.bridge.entity">IPlayer</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="openInventory-io.github.wysohn.triggerreactor.core.bridge.IInventory-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>openInventory</h4>
+<pre>public&nbsp;void&nbsp;openInventory(<a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/IInventory.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">IInventory</a>&nbsp;inventory)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html#openInventory-io.github.wysohn.triggerreactor.core.bridge.IInventory-">openInventory</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html" title="interface in io.github.wysohn.triggerreactor.core.bridge.entity">IPlayer</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getChunk--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getChunk</h4>
+<pre>public&nbsp;<a href="../../../../../../../io/github/wysohn/triggerreactor/core/manager/location/SimpleChunkLocation.html" title="class in io.github.wysohn.triggerreactor.core.manager.location">SimpleChunkLocation</a>&nbsp;getChunk()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html#getChunk--">getChunk</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html" title="interface in io.github.wysohn.triggerreactor.core.bridge.entity">IPlayer</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getItemInMainHand--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getItemInMainHand</h4>
+<pre>public&nbsp;<a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/IItemStack.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">IItemStack</a>&nbsp;getItemInMainHand()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html#getItemInMainHand--">IPlayer</a></code></span></div>
+<div class="block">Get item in this player's main hand.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html#getItemInMainHand--">getItemInMainHand</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html" title="interface in io.github.wysohn.triggerreactor.core.bridge.entity">IPlayer</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>IItemStack in the main hand; null if holding anything.</dd>
+</dl>
+</li>
+</ul>
+<a name="getLocation--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLocation</h4>
+<pre>public&nbsp;<a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/ILocation.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">ILocation</a>&nbsp;getLocation()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html#getLocation--">getLocation</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html" title="interface in io.github.wysohn.triggerreactor.core.bridge.entity">IPlayer</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setItemInMainHand-io.github.wysohn.triggerreactor.core.bridge.IItemStack-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setItemInMainHand</h4>
+<pre>public&nbsp;void&nbsp;setItemInMainHand(<a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/IItemStack.html" title="interface in io.github.wysohn.triggerreactor.core.bridge">IItemStack</a>&nbsp;iS)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html#setItemInMainHand-io.github.wysohn.triggerreactor.core.bridge.IItemStack-">setItemInMainHand</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io/github/wysohn/triggerreactor/core/bridge/entity/IPlayer.html" title="interface in io.github.wysohn.triggerreactor.core.bridge.entity">IPlayer</a></code></dd>
+</dl>
+</li>
 </ul>
 </li>
 </ul>
@@ -181,14 +435,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">
